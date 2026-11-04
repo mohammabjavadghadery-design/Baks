@@ -2,1895 +2,1660 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>باکس حمل خاک نخاله قادری | خدمات حرفه‌ای ساختمانی در مشهد</title>
-<meta name="description" content="خدمات تخصصی حمل خاک و نخاله با 15 سال سابقه، بیش از 50 باکس آماده، بهترین قیمت در مناطق 3 و 4 مشهد">
-<!-- فونت‌ها و آیکون‌ها -->
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<!-- استایل‌های سایت -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>باکس حمل خاک نخاله قادری | منطقه ۳ و ۴ مشهد</title>
+<meta name="description" content="حمل خاک و نخاله ساختمانی، خاکبرداری مکانیزه و خدمات کارگری در منطقه ۳ و ۴ مشهد. ۱۵ سال سابقه، ۵۰ باکس آماده.">
+<link rel="canonical" href="https://mohammabjavadghadery-design.github.io/Baks/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23FF6B00'/><path d='M25 60h50v-8a6 6 0 0 0-6-6H44l-6-10H31a6 6 0 0 0-6 6v18z M32 68a5 5 0 1 0 0-10 5 5 0 0 0 0 10z M68 68a5 5 0 1 0 0-10 5 5 0 0 0 0 10z' fill='%231A1512' stroke='%231A1512' stroke-width='2' stroke-linejoin='round'/></svg>">
+<meta name="theme-color" content="#1A1512">
+<meta property="og:type" content="website">
+<meta property="og:title" content="باکس حمل خاک و نخاله قادری — مشهد">
+<meta property="og:description" content="حمل خاک و نخاله، خاکبرداری و خدمات کارگری در منطقه ۳ و ۴ مشهد.">
+<meta property="og:url" content="https://mohammabjavadghadery-design.github.io/Baks/">
+<meta property="og:image" content="https://mohammabjavadghadery-design.github.io/Baks/images/truck-main.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root {
---primary-orange: #FF6B00;
---dark-orange: #E65100;
---light-orange: #FFA726;
---gradient-orange: linear-gradient(135deg, #FF6B00, #FFA726);
---gradient-orange-hover: linear-gradient(135deg, #E65100, #FF8F00);
---green: #28a745;
---green-hover: #218838;
---dark-blue: #1a237e;
---light-blue: #1e88e5;
---gray-dark: #2d3748;
---gray-medium: #4a5568;
---gray-light: #f7fafc;
---white: #ffffff;
---shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
---shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
---shadow-strong: 0 15px 35px rgba(255, 107, 0, 0.2);
---transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
---border-radius: 16px;
-}
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-body {
-font-family: 'Vazirmatn', sans-serif;
-background-color: var(--gray-light);
-color: var(--gray-dark);
-line-height: 1.8;
-overflow-x: hidden;
-position: relative;
-}
-.container {
-width: 100%;
-max-width: 1200px;
-margin: 0 auto;
-padding: 0 20px;
-}
-/* ========== LOADER ========== */
-.loader {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: var(--gradient-orange);
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-z-index: 9999;
-transition: opacity 0.8s, visibility 0.8s;
-}
-.loader-content {
-text-align: center;
-}
-.loader-truck {
-font-size: 4rem;
-color: white;
-animation: truckBounce 1.5s infinite alternate;
-margin-bottom: 20px;
-filter: drop-shadow(0 5px 15px rgba(0,0,0,0.2));
-}
-.loader-text {
-color: white;
-font-size: 1.2rem;
-font-weight: 500;
-}
-@keyframes truckBounce {
-0% { transform: translateY(0) rotate(0deg); }
-100% { transform: translateY(-20px) rotate(-5deg); }
-}
-.loader.hidden {
-opacity: 0;
-visibility: hidden;
-}
-/* ========== HEADER ========== */
-header {
-background: rgba(255, 255, 255, 0.98);
-backdrop-filter: blur(10px);
-position: fixed;
-top: 0;
-width: 100%;
-z-index: 1000;
-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-transition: var(--transition);
-}
-.header-content {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 15px 0;
-}
-.logo-section {
-display: flex;
-align-items: center;
-gap: 15px;
-}
-.logo {
-width: 70px;
-height: 60px;
-background: var(--gradient-orange);
-border-radius: 12px;
-display: flex;
-align-items: center;
-justify-content: center;
-color: white;
-font-weight: 900;
-font-size: 1.3rem;
-position: relative;
-overflow: hidden;
-box-shadow: var(--shadow-strong);
-animation: logoFloat 4s ease-in-out infinite;
-}
-@keyframes logoFloat {
-0% { transform: translateY(0px); }
-50% { transform: translateY(-5px); }
-100% { transform: translateY(0px); }
-}
-.logo::before {
-content: '';
-position: absolute;
-width: 30px;
-height: 30px;
-background: rgba(255, 255, 255, 0.2);
-border-radius: 50%;
-top: -15px;
-left: -15px;
-}
-.logo-text {
-font-size: 1.1rem;
-font-weight: 700;
-color: var(--dark-orange);
-}
-.logo-text span {
-display: block;
-font-size: 0.9rem;
-color: var(--gray-medium);
-font-weight: 500;
-}
-.nav-menu {
-display: flex;
-gap: 30px;
-}
-.nav-item {
-color: var(--gray-dark);
-text-decoration: none;
-font-weight: 600;
-position: relative;
-padding: 8px 0;
-transition: var(--transition);
-}
-.nav-item:hover {
-color: var(--primary-orange);
-}
-.nav-item::after {
-content: '';
-position: absolute;
-bottom: 0;
-right: 0;
-width: 0;
-height: 3px;
-background: var(--gradient-orange);
-transition: width 0.3s;
-border-radius: 3px;
-}
-.nav-item:hover::after {
-width: 100%;
-}
-.header-cta {
-background: var(--gradient-orange);
-color: white;
-padding: 12px 28px;
-border-radius: 50px;
-font-weight: 700;
-text-decoration: none;
-box-shadow: var(--shadow-strong);
-transition: var(--transition);
-display: flex;
-align-items: center;
-gap: 8px;
-animation: pulse 2s infinite;
-}
-@keyframes pulse {
-0% { transform: scale(1); }
-50% { transform: scale(1.05); }
-100% { transform: scale(1); }
-}
-.header-cta:hover {
-background: var(--gradient-orange-hover);
-transform: translateY(-3px);
-box-shadow: 0 10px 25px rgba(255, 107, 0, 0.3);
-animation: none;
-}
-/* ========== HERO SECTION ========== */
-.hero {
-background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url('images/truck-main.jpg') center/cover;
-color: white;
-padding: 180px 0 100px;
-margin-top: 70px;
-position: relative;
-overflow: hidden;
-}
-.hero-content {
-max-width: 700px;
-text-align: center;
-margin: 0 auto;
-animation: fadeInUp 1s ease-out;
-}
-@keyframes fadeInUp {
-from {
-opacity: 0;
-transform: translateY(40px);
-}
-to {
-opacity: 1;
-transform: translateY(0);
-}
-}
-.hero h1 {
-font-size: 3.2rem;
-font-weight: 900;
-margin-bottom: 20px;
-line-height: 1.2;
-text-shadow: 0 2px 10px rgba(0,0,0,0.3);
-}
-.hero p {
-font-size: 1.3rem;
-margin-bottom: 35px;
-opacity: 0.9;
-}
-.hero-stats {
-display: flex;
-justify-content: center;
-gap: 40px;
-margin-top: 50px;
-flex-wrap: wrap;
-}
-.stat-item {
-text-align: center;
-}
-.stat-number {
-font-size: 2.5rem;
-font-weight: 900;
-color: var(--light-orange);
-display: block;
-margin-bottom: 5px;
-}
-.stat-label {
-font-size: 0.95rem;
-opacity: 0.8;
-}
-/* ========== SERVICES ========== */
-.services {
-padding: 100px 0;
-background: var(--white);
-}
-.section-title {
-text-align: center;
-margin-bottom: 60px;
-}
-.section-title h2 {
-font-size: 2.5rem;
-color: var(--gray-dark);
-margin-bottom: 15px;
-position: relative;
-display: inline-block;
-}
-.section-title h2::after {
-content: '';
-position: absolute;
-bottom: -10px;
-right: 50%;
-transform: translateX(50%);
-width: 80px;
-height: 4px;
-background: var(--gradient-orange);
-border-radius: 2px;
-}
-.section-title p {
-color: var(--gray-medium);
-max-width: 600px;
-margin: 20px auto 0;
-}
-.services-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-gap: 30px;
-}
-.service-card {
-background: var(--white);
-border-radius: var(--border-radius);
-padding: 40px 30px;
-box-shadow: var(--shadow);
-transition: var(--transition);
-border: 1px solid rgba(0,0,0,0.05);
-position: relative;
-overflow: hidden;
-text-align: center;
-}
-.service-card::before {
-content: '';
-position: absolute;
-top: 0;
-right: 0;
-width: 100%;
-height: 5px;
-background: var(--gradient-orange);
-}
-.service-card:hover {
-transform: translateY(-15px);
-box-shadow: var(--shadow-hover);
-}
-.service-icon {
-width: 80px;
-height: 80px;
-background: linear-gradient(135deg, rgba(255,107,0,0.1), rgba(255,167,38,0.1));
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-margin: 0 auto 25px;
-font-size: 2.2rem;
-color: var(--primary-orange);
-}
-.service-card h3 {
-font-size: 1.4rem;
-margin-bottom: 15px;
-color: var(--gray-dark);
-}
-/* ========== PRICING SECTION ========== */
-.pricing {
-padding: 80px 0;
-background: var(--gray-light);
-}
-.pricing-box {
-background: #28a745; /* سبز */
-border-radius: 50px; /* بیضی شکل */
-padding: 30px 40px;
-box-shadow: var(--shadow);
-max-width: 500px;
-margin: 0 auto;
-text-align: center;
-color: white;
-font-size: 2rem;
-font-weight: 900;
-animation: pricePulse 3s infinite;
-}
-@keyframes pricePulse {
-0%, 100% { transform: scale(1); }
-50% { transform: scale(1.05); }
-}
-/* ========== GALLERY - HORIZONTAL carousel ========== */
-.gallery {
-padding: 80px 0;
-background: var(--gray-light);
-}
-.gallery-header {
-text-align: center;
-margin-bottom: 40px;
-}
-.gallery-header h2 {
-font-size: 2.5rem;
-color: var(--gray-dark);
-margin-bottom: 15px;
-}
-.gallery-header p {
-color: var(--gray-medium);
-max-width: 600px;
-margin: 15px auto 0;
-}
-.gallery-carousel {
-position: relative;
-margin-top: 30px;
-overflow: hidden;
-}
-.gallery-scroll {
-display: flex;
-gap: 25px;
-padding: 20px 0;
-overflow-x: auto;
-scroll-behavior: smooth;
-scroll-snap-type: x mandatory;
--webkit-overflow-scrolling: touch;
-}
-.gallery-scroll::-webkit-scrollbar {
-height: 8px;
-}
-.gallery-scroll::-webkit-scrollbar-track {
-background: rgba(0,0,0,0.05);
-border-radius: 4px;
-}
-.gallery-scroll::-webkit-scrollbar-thumb {
-background: var(--primary-orange);
-border-radius: 4px;
-}
-.gallery-item {
-min-width: 320px;
-border-radius: var(--border-radius);
-overflow: hidden;
-box-shadow: var(--shadow);
-transition: var(--transition);
-position: relative;
-height: 300px;
-scroll-snap-align: start;
-flex: 0 0 auto;
-}
-.gallery-item:hover {
-transform: scale(1.05);
-box-shadow: var(--shadow-hover);
-}
-.gallery-img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-transition: var(--transition);
-}
-.gallery-item:hover .gallery-img {
-transform: scale(1.1);
-filter: brightness(1.1);
-}
-.gallery-caption {
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
-background: linear-gradient(transparent, rgba(0,0,0,0.85));
-color: var(--white);
-padding: 20px;
-text-align: center;
-font-weight: 700;
-font-size: 1.1rem;
-transform: translateY(100%);
-transition: var(--transition);
-}
-.gallery-item:hover .gallery-caption,
-.gallery-item:focus-within .gallery-caption {
-transform: translateY(0);
-}
-.carousel-nav {
-display: flex;
-justify-content: center;
-gap: 15px;
-margin-top: 25px;
-}
-.carousel-btn {
-width: 50px;
-height: 50px;
-border-radius: 50%;
-background: var(--white);
-border: 2px solid var(--primary-orange);
-color: var(--primary-orange);
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 1.2rem;
-cursor: pointer;
-transition: var(--transition);
-box-shadow: var(--shadow);
-}
-.carousel-btn:hover {
-background: var(--primary-orange);
-color: var(--white);
-transform: translateY(-3px);
-}
-.carousel-dots {
-display: flex;
-justify-content: center;
-gap: 10px;
-margin-top: 20px;
-}
-.dot {
-width: 12px;
-height: 12px;
-border-radius: 50%;
-background: var(--gray-medium);
-cursor: pointer;
-transition: var(--transition);
-}
-.dot.active {
-background: var(--primary-orange);
-transform: scale(1.2);
-}
-/* ========== AREAS ========== */
-.areas {
-padding: 100px 0;
-background: var(--white);
-}
-.areas-tabs {
-display: flex;
-justify-content: center;
-gap: 20px;
-margin-bottom: 40px;
-flex-wrap: wrap;
-}
-.area-tab {
-padding: 14px 35px;
-background: var(--white);
-border: 2px solid var(--primary-orange);
-border-radius: 50px;
-font-weight: 700;
-cursor: pointer;
-transition: var(--transition);
-color: var(--dark-orange);
-}
-.area-tab.active,
-.area-tab:hover {
-background: var(--primary-orange);
-color: var(--white);
-transform: scale(1.05);
-}
-.areas-content {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-gap: 30px;
-margin-top: 30px;
-}
-.area-district {
-background: var(--white);
-border-radius: var(--border-radius);
-padding: 30px;
-box-shadow: var(--shadow);
-border: 2px solid rgba(0,0,0,0.05);
-transition: var(--transition);
-}
-.area-district:hover {
-border-color: var(--primary-orange);
-transform: translateY(-5px);
-}
-.district-header {
-display: flex;
-align-items: center;
-gap: 15px;
-margin-bottom: 25px;
-padding-bottom: 20px;
-border-bottom: 3px solid var(--primary-orange);
-}
-.district-number {
-background: var(--primary-orange);
-color: var(--white);
-width: 50px;
-height: 50px;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-font-weight: 900;
-font-size: 1.3rem;
-}
-.district-title {
-font-size: 1.4rem;
-color: var(--dark-orange);
-font-weight: 900;
-}
-.streets-list {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-gap: 10px;
-}
-.streets-list li {
-padding: 10px 15px;
-background: var(--gray-light);
-border-radius: 8px;
-display: flex;
-align-items: center;
-gap: 10px;
-transition: var(--transition);
-list-style: none;
-}
-.streets-list li:hover {
-background: rgba(255, 107, 0, 0.1);
-transform: translateX(5px);
-}
-.streets-list li::before {
-content: '✓';
-color: var(--primary-orange);
-font-weight: bold;
-font-size: 1.2rem;
-}
-.street-highlight {
-background: linear-gradient(135deg, rgba(255,107,0,0.1), rgba(230,81,0,0.1));
-padding: 3px 8px;
-border-radius: 5px;
-font-weight: 700;
-color: var(--dark-orange);
-}
-/* ========== FAQ SECTION ========== */
-.faq {
-padding: 80px 0;
-background: var(--white);
-}
-.faq-container {
-max-width: 800px;
-margin: 0 auto;
-}
-.faq-item {
-background: var(--white);
-border-radius: var(--border-radius);
-margin-bottom: 20px;
-box-shadow: var(--shadow);
-overflow: hidden;
-border: 1px solid rgba(0,0,0,0.05);
-}
-.faq-question {
-padding: 25px 30px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-cursor: pointer;
-background: var(--gray-light);
-transition: var(--transition);
-}
-.faq-question:hover {
-background: rgba(255, 107, 0, 0.1);
-}
-.faq-question h3 {
-font-size: 1.2rem;
-color: var(--gray-dark);
-margin: 0;
-}
-.faq-question i {
-color: var(--primary-orange);
-transition: transform 0.3s;
-}
-.faq-answer {
-padding: 0 30px;
-max-height: 0;
-overflow: hidden;
-transition: max-height 0.3s ease, padding 0.3s ease;
-}
-.faq-answer.open {
-padding: 25px 30px;
-max-height: 200px;
-}
-.faq-answer p {
-color: var(--gray-medium);
-line-height: 1.8;
-}
-/* ========== TESTIMONIALS ========== */
-.testimonials {
-padding: 100px 0;
-background: var(--gray-light);
-}
-.testimonials-container {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-gap: 30px;
-}
-.testimonial-card {
-background: var(--white);
-border-radius: var(--border-radius);
-padding: 40px;
-box-shadow: var(--shadow);
-transition: var(--transition);
-border: 1px solid rgba(0,0,0,0.05);
-position: relative;
-}
-.testimonial-card::before {
-content: '"';
-position: absolute;
-top: 20px;
-right: 30px;
-font-size: 4rem;
-color: var(--primary-orange);
-opacity: 0.1;
-font-family: serif;
-}
-.testimonial-card:nth-child(odd) {
-transform: translateY(20px);
-}
-.testimonial-card:nth-child(even) {
-transform: translateY(-20px);
-}
-.testimonial-card:hover {
-transform: translateY(-10px) !important;
-box-shadow: var(--shadow-hover);
-}
-.testimonial-text {
-font-size: 1.1rem;
-line-height: 1.9;
-color: var(--gray-medium);
-margin-bottom: 25px;
-position: relative;
-padding-right: 20px;
-}
-.testimonial-author {
-display: flex;
-align-items: center;
-gap: 15px;
-padding-top: 20px;
-border-top: 1px solid rgba(0,0,0,0.1);
-}
-.author-avatar {
-width: 60px;
-height: 60px;
-background: var(--gradient-orange);
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 1.5rem;
-color: white;
-font-weight: 700;
-}
-.author-info h4 {
-font-size: 1.1rem;
-margin-bottom: 5px;
-color: var(--gray-dark);
-}
-.author-info p {
-font-size: 0.9rem;
-color: var(--gray-medium);
-}
-.author-rating {
-color: #FFD700;
-margin-top: 5px;
-}
-/* ========== CONTACT CARDS ========== */
-.contact-section {
-padding: 100px 0;
-background: var(--white);
-}
-.contact-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-gap: 25px;
-}
-.contact-card {
-background: var(--white);
-border-radius: var(--border-radius);
-padding: 35px 30px;
-box-shadow: var(--shadow);
-transition: var(--transition);
-text-align: center;
-border: 2px solid transparent;
-}
-.contact-card:hover {
-border-color: var(--primary-orange);
-transform: translateY(-10px);
-box-shadow: var(--shadow-hover);
-}
-.contact-icon {
-width: 70px;
-height: 70px;
-background: linear-gradient(135deg, rgba(40,167,69,0.1), rgba(52,206,87,0.1));
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-margin: 0 auto 20px;
-font-size: 1.8rem;
-color: var(--green);
-}
-.contact-name {
-font-size: 1.3rem;
-font-weight: 700;
-margin-bottom: 10px;
-color: var(--gray-dark);
-}
-.contact-role {
-font-size: 0.95rem;
-color: var(--gray-medium);
-margin-bottom: 15px;
-}
-.contact-phone {
-display: inline-block;
-background: var(--green);
-color: white;
-padding: 12px 25px;
-border-radius: 50px;
-font-weight: 700;
-text-decoration: none;
-transition: var(--transition);
-box-shadow: 0 5px 15px rgba(40,167,69,0.3);
-}
-.contact-phone:hover {
-background: var(--green-hover);
-transform: translateY(-3px);
-box-shadow: 0 8px 20px rgba(40,167,69,0.4);
-}
-.guarantee {
-background: linear-gradient(135deg, rgba(40,167,69,0.1), rgba(28,138,56,0.1));
-padding: 30px;
-border-radius: var(--border-radius);
-margin-top: 50px;
-border-left: 4px solid var(--green);
-max-width: 800px;
-margin: 50px auto 0;
-text-align: center;
-box-shadow: var(--shadow);
-}
-.guarantee h3 {
-font-size: 1.5rem;
-color: var(--dark-orange);
-margin-bottom: 15px;
-font-weight: 800;
-}
-.guarantee p {
-color: var(--gray-medium);
-line-height: 1.8;
-}
-/* ========== FLOATING ACTION BUTTON ========== */
-.fab-container {
-position: fixed;
-bottom: 30px;
-left: 30px;
-z-index: 999;
-}
-.fab-main {
-width: 70px;
-height: 70px;
-background: var(--gradient-orange);
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-color: white;
-font-size: 1.8rem;
-cursor: pointer;
-box-shadow: 0 10px 30px rgba(255, 107, 0, 0.4);
-transition: var(--transition);
-position: relative;
-z-index: 1001;
-animation: pulse 2s infinite;
-}
-.fab-main:hover {
-transform: scale(1.1) rotate(90deg);
-box-shadow: 0 15px 40px rgba(255, 107, 0, 0.6);
-animation: none;
-}
-.fab-menu {
-position: absolute;
-bottom: 85px;
-left: 0;
-background: white;
-border-radius: 20px;
-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
-padding: 20px;
-width: 300px;
-opacity: 0;
-visibility: hidden;
-transform: translateY(20px);
-transition: var(--transition);
-z-index: 1000;
-}
-.fab-menu.active {
-opacity: 1;
-visibility: visible;
-transform: translateY(0);
-}
-.fab-menu h4 {
-color: var(--gray-dark);
-margin-bottom: 15px;
-padding-bottom: 10px;
-border-bottom: 2px solid var(--primary-orange);
-font-size: 1.2rem;
-}
-.fab-contact-item {
-display: flex;
-align-items: center;
-gap: 12px;
-padding: 12px;
-border-radius: 10px;
-margin-bottom: 10px;
-transition: var(--transition);
-text-decoration: none;
-color: var(--gray-dark);
-}
-.fab-contact-item:hover {
-background: rgba(255, 107, 0, 0.1);
-transform: translateX(5px);
-}
-.fab-contact-icon {
-width: 40px;
-height: 40px;
-background: rgba(255, 107, 0, 0.1);
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-color: var(--primary-orange);
-}
-.fab-contact-info h5 {
-font-size: 1rem;
-margin-bottom: 3px;
-}
-.fab-contact-info p {
-font-size: 0.9rem;
-color: var(--gray-medium);
-}
-.fab-share {
-margin-top: 15px;
-display: flex;
-gap: 10px;
-justify-content: center;
-}
-.share-btn {
-width: 40px;
-height: 40px;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-color: white;
-font-size: 1rem;
-text-decoration: none;
-transition: var(--transition);
-}
-.share-telegram { background: #0088cc; }
-.share-whatsapp { background: #25D366; }
-.share-copy { background: var(--gray-medium); }
-.share-btn:hover {
-transform: translateY(-3px);
-}
-/* ========== BOTTOM NAVIGATION ========== */
-.bottom-nav {
-position: fixed;
-bottom: 0;
-right: 0;
-width: 100%;
-background: rgba(255, 255, 255, 0.98);
-backdrop-filter: blur(10px);
-border-top: 1px solid rgba(0,0,0,0.1);
-display: flex;
-justify-content: space-around;
-padding: 12px 0;
-z-index: 990;
-box-shadow: 0 -5px 20px rgba(0,0,0,0.08);
-}
-.bottom-nav-item {
-display: flex;
-flex-direction: column;
-align-items: center;
-text-decoration: none;
-color: var(--gray-medium);
-transition: var(--transition);
-flex: 1;
-padding: 8px 0;
-}
-.bottom-nav-item i {
-font-size: 1.3rem;
-margin-bottom: 5px;
-transition: var(--transition);
-}
-.bottom-nav-item span {
-font-size: 0.75rem;
-font-weight: 600;
-}
-.bottom-nav-item.active,
-.bottom-nav-item:hover {
-color: var(--primary-orange);
-}
-.bottom-nav-item.active i,
-.bottom-nav-item:hover i {
-transform: translateY(-3px);
-}
-/* ========== FOOTER ========== */
-footer {
-background: var(--gray-dark);
-color: white;
-padding: 80px 0 30px;
-margin-bottom: 60px;
-}
-.footer-content {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-gap: 40px;
-margin-bottom: 50px;
-}
-.footer-section h4 {
-font-size: 1.3rem;
-margin-bottom: 25px;
-color: white;
-position: relative;
-padding-bottom: 10px;
-}
-.footer-section h4::after {
-content: '';
-position: absolute;
-bottom: 0;
-right: 0;
-width: 50px;
-height: 3px;
-background: var(--gradient-orange);
-}
-.footer-section p {
-color: #cbd5e0;
-margin-bottom: 15px;
-line-height: 1.7;
-}
-.footer-links {
-display: flex;
-flex-direction: column;
-gap: 12px;
-}
-.footer-link {
-color: #cbd5e0;
-text-decoration: none;
-transition: var(--transition);
-display: flex;
-align-items: center;
-gap: 10px;
-}
-.footer-link:hover {
-color: var(--light-orange);
-transform: translateX(5px);
-}
-.footer-link i {
-color: var(--primary-orange);
-}
-.footer-newsletter {
-margin-top: 20px;
-}
-.newsletter-input {
-width: 100%;
-padding: 14px 20px;
-border-radius: 50px;
-border: 2px solid rgba(255,255,255,0.1);
-background: rgba(255,255,255,0.05);
-color: white;
-font-family: inherit;
-margin-bottom: 15px;
-transition: var(--transition);
-}
-.newsletter-input:focus {
-outline: none;
-border-color: var(--primary-orange);
-background: rgba(255,255,255,0.1);
-}
-.newsletter-btn {
-width: 100%;
-padding: 14px;
-background: var(--gradient-orange);
-color: white;
-border: none;
-border-radius: 50px;
-font-weight: 700;
-cursor: pointer;
-transition: var(--transition);
-font-family: inherit;
-}
-.newsletter-btn:hover {
-background: var(--gradient-orange-hover);
-transform: translateY(-3px);
-}
-.copyright {
-text-align: center;
-padding-top: 30px;
-border-top: 1px solid rgba(255,255,255,0.1);
-color: #a0aec0;
-font-size: 0.9rem;
-}
-.visit-count {
-color: var(--light-orange);
-font-weight: bold;
-}
-.footer-phones {
-margin-top: 20px;
-}
-.footer-phone {
-display: inline-block;
-background: var(--green);
-color: white;
-padding: 8px 15px;
-border-radius: 25px;
-margin: 3px;
-font-weight: 700;
-font-size: 0.9rem;
-transition: var(--transition);
-text-decoration: none;
-}
-.footer-phone:hover {
-background: #34ce57;
-transform: scale(1.05);
-}
-/* ========== RESPONSIVE ========== */
-@media (max-width: 992px) {
-.hero h1 {
-font-size: 2.8rem;
-}
-.nav-menu {
-display: none;
-}
-.header-cta {
-padding: 10px 20px;
-font-size: 0.9rem;
-}
-}
-@media (max-width: 768px) {
-.hero {
-padding: 150px 0 80px;
-}
-.hero h1 {
-font-size: 2.3rem;
-}
-.hero p {
-font-size: 1.1rem;
-}
-.section-title h2 {
-font-size: 2rem;
-}
-.services, .testimonials, .contact-section, .gallery, .areas, .faq, .pricing {
-padding: 70px 0;
-}
-.gallery-item {
-min-width: 280px;
-height: 280px;
-}
-.fab-container {
-bottom: 80px;
-left: 20px;
-}
-.fab-menu {
-width: 280px;
-left: -105px;
-}
-.testimonial-card:nth-child(odd),
-.testimonial-card:nth-child(even) {
-transform: none;
-}
-.pricing-box {
-font-size: 1.7rem;
-padding: 25px 30px;
-}
-}
-@media (max-width: 480px) {
-.hero h1 {
-font-size: 2rem;
-}
-.hero-stats {
-gap: 20px;
-}
-.stat-number {
-font-size: 2rem;
-}
-.fab-main {
-width: 60px;
-height: 60px;
-font-size: 1.5rem;
-}
-.bottom-nav span {
-font-size: 0.65rem;
-}
-.gallery-item {
-min-width: 250px;
-height: 250px;
-}
-.pricing-box {
-font-size: 1.5rem;
-padding: 20px 25px;
-}
+:root{
+  --accent: #FF6B00;
+  --accent-hover: #E55F00;
+  --accent-soft: #FFF0E0;
+  --accent-glow: rgba(255,107,0,0.28);
+  --on-accent: #1A1512;
+
+  --bg-deep: #1A1512;
+  --bg-deep-2: #241C17;
+  --bg-light: #F5F0E8;
+  --bg-mid: #EFE7DA;
+  --bg-card: #FFFFFF;
+
+  --ink: #1A1512;
+  --ink-soft: #5C4F45;
+  --muted: #7A6B5E;
+  --ink-dark: #F5F0E8;
+  --muted-dark: #A89888;
+
+  --line: rgba(26,21,18,0.09);
+  --line-firm: rgba(26,21,18,0.15);
+  --line-dark: rgba(245,240,232,0.10);
+
+  --r-1: 4px; --r-2: 8px; --r-3: 12px; --r-4: 16px; --r-5: 24px; --r-pill: 999px;
+
+  --s-1:4px;--s-2:8px;--s-3:12px;--s-4:16px;--s-5:24px;
+  --s-6:32px;--s-7:40px;--s-8:48px;--s-9:64px;--s-10:80px;--s-11:96px;
+
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 500ms;
+  --dur-fast: 250ms;
+
+  --shadow-1:
+    inset 0 1px 0 rgba(255,255,255,0.9),
+    0 1px 2px rgba(26,21,18,0.06),
+    0 2px 6px rgba(26,21,18,0.04);
+  --shadow-2:
+    inset 0 1px 0 rgba(255,255,255,0.9),
+    0 1px 2px rgba(26,21,18,0.06),
+    0 4px 12px rgba(26,21,18,0.06),
+    0 16px 32px rgba(26,21,18,0.05);
+  --shadow-3:
+    inset 0 1px 0 rgba(255,255,255,0.9),
+    0 2px 4px rgba(26,21,18,0.05),
+    0 12px 24px rgba(26,21,18,0.07),
+    0 28px 56px rgba(26,21,18,0.10);
+  --shadow-hero:
+    0 4px 8px rgba(26,21,18,0.08),
+    0 16px 32px rgba(26,21,18,0.12),
+    0 32px 64px rgba(26,21,18,0.16);
+
+  --shadow-btn:
+    inset 0 1px 0 rgba(255,255,255,0.28),
+    inset 0 -1px 0 rgba(26,21,18,0.14),
+    0 2px 4px rgba(255,107,0,0.20),
+    0 8px 20px rgba(255,107,0,0.22);
+  --shadow-btn-hover:
+    inset 0 1px 0 rgba(255,255,255,0.32),
+    inset 0 -1px 0 rgba(26,21,18,0.14),
+    0 4px 8px rgba(255,107,0,0.26),
+    0 16px 32px rgba(255,107,0,0.26);
+  --shadow-btn-active:
+    inset 0 1px 0 rgba(255,255,255,0.18),
+    inset 0 2px 4px rgba(26,21,18,0.14),
+    0 1px 2px rgba(255,107,0,0.20);
+
+  --focus: 0 0 0 3px rgba(255,107,0,0.42);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:auto}
+body{
+  font-family:'Vazirmatn',system-ui,sans-serif;
+  background:var(--bg-light);
+  color:var(--ink);
+  font-size:16px;line-height:1.6;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  -webkit-user-select:none;
+  user-select:none;
+}
+img{display:block;max-width:100%;height:auto}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:none;box-shadow:var(--focus);border-radius:var(--r-2)}
+
+/* Allow selection for copyable content */
+.copyable,
+.contact-row-phone,
+.footer-phones a,
+.testi-text,
+.faq-a p{
+  -webkit-user-select:text;
+  user-select:text;
+}
+
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 var(--s-5)}
+
+.skip-link{
+  position:absolute;top:-100px;inset-inline-start:var(--s-4);
+  background:var(--accent);color:var(--on-accent);
+  padding:var(--s-2) var(--s-4);border-radius:var(--r-2);
+  font-weight:600;z-index:10000;
+  transition:top var(--dur-fast) var(--ease);
+}
+.skip-link:focus{top:var(--s-4)}
+
+.icon{
+  width:1em;height:1em;fill:none;stroke:currentColor;
+  stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
+  flex-shrink:0;vertical-align:middle;
+}
+
+/* ===== LOADER ===== */
+.loader{
+  position:fixed;inset:0;z-index:9999;
+  background:var(--bg-deep);
+  display:flex;align-items:center;justify-content:center;
+  transition:opacity 400ms var(--ease),visibility 400ms var(--ease);
+}
+.loader.is-done{opacity:0;visibility:hidden;pointer-events:none}
+.loader-inner{
+  display:flex;flex-direction:column;align-items:center;
+  gap:var(--s-4);text-align:center;
+}
+.loader-mark{
+  width:56px;height:56px;
+  background:var(--accent);
+  border-radius:var(--r-3);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--on-accent);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.28),
+    inset 0 -1px 0 rgba(26,21,18,0.14),
+    0 4px 12px rgba(255,107,0,0.35);
+}
+.loader-mark .icon{width:28px;height:28px;stroke-width:2.2}
+.loader-title{
+  font-size:17px;font-weight:600;color:var(--ink-dark);
+}
+.loader-bar-wrap{
+  width:120px;height:3px;background:rgba(245,240,232,0.12);
+  border-radius:var(--r-pill);overflow:hidden;
+}
+.loader-bar{
+  height:100%;width:0;
+  background:var(--accent);
+  border-radius:var(--r-pill);
+  animation:loaderFill 1100ms var(--ease) forwards;
+}
+@keyframes loaderFill{to{width:100%}}
+
+/* ===== HEADER ===== */
+.header{
+  position:fixed;top:var(--s-3);inset-inline:0;z-index:1000;
+  display:flex;justify-content:center;padding:0 var(--s-4);
+  pointer-events:none;
+}
+.header-bar{
+  pointer-events:auto;
+  width:100%;max-width:1100px;
+  background:rgba(245,240,232,0.82);
+  backdrop-filter:blur(24px) saturate(160%);
+  -webkit-backdrop-filter:blur(24px) saturate(160%);
+  border:1px solid rgba(26,21,18,0.08);
+  border-radius:var(--r-5);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.95),
+    0 2px 4px rgba(26,21,18,0.05),
+    0 8px 16px rgba(26,21,18,0.06);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:var(--s-2) var(--s-3) var(--s-2) var(--s-4);
+  transition:box-shadow var(--dur) var(--ease);
+}
+.header-bar.scrolled{
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.95),
+    0 4px 8px rgba(26,21,18,0.08),
+    0 16px 32px rgba(26,21,18,0.10);
+}
+.logo{display:flex;align-items:center;gap:var(--s-3)}
+.logo-mark{
+  width:44px;height:44px;
+  background:var(--accent);
+  border-radius:var(--r-3);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--on-accent);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.28),
+    inset 0 -1px 0 rgba(26,21,18,0.14),
+    0 2px 6px rgba(255,107,0,0.30);
+}
+.logo-mark .icon{width:24px;height:24px;stroke-width:2.2}
+.logo-name{font-size:15px;font-weight:700;line-height:1.3;color:var(--ink)}
+.logo-sub{font-size:12px;color:var(--ink-soft);line-height:1.3}
+.nav{display:flex;gap:var(--s-5)}
+.nav a{
+  font-size:14px;font-weight:500;color:var(--ink-soft);
+  position:relative;padding:var(--s-1) 0;
+  transition:color var(--dur-fast) var(--ease);
+}
+.nav a::after{
+  content:'';position:absolute;bottom:0;inset-inline-start:0;
+  width:0;height:2px;background:var(--accent);border-radius:2px;
+  transition:width var(--dur-fast) var(--ease);
+}
+.nav a:hover,.nav a:focus-visible{color:var(--ink)}
+.nav a:hover::after,.nav a:focus-visible::after{width:100%}
+.header-cta{
+  display:inline-flex;align-items:center;gap:var(--s-2);
+  background:var(--accent);color:var(--on-accent);
+  padding:var(--s-2) var(--s-4);
+  border-radius:var(--r-3);
+  font-size:14px;font-weight:600;
+  box-shadow:var(--shadow-btn);
+  transition:transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease),background var(--dur-fast) var(--ease);
+}
+.header-cta:hover{background:var(--accent-hover);transform:translateY(-1.5px);box-shadow:var(--shadow-btn-hover)}
+.header-cta:active{transform:translateY(0) scale(0.98);box-shadow:var(--shadow-btn-active)}
+
+/* ===== HERO — image background, warm overlay ===== */
+.hero{
+  position:relative;
+  padding:200px 0 120px;
+  color:var(--ink-dark);
+  overflow:visible;
+}
+.hero-bg{
+  position:absolute;inset:0;z-index:0;
+  overflow:hidden;
+  border-bottom-left-radius:var(--r-5);
+  border-bottom-right-radius:var(--r-5);
+}
+.hero-bg img{
+  width:100%;height:100%;
+  object-fit:cover;
+  object-position:center 40%;
+  animation:heroZoom 20s var(--ease) forwards;
+}
+@keyframes heroZoom{
+  from{transform:scale(1.08)}
+  to{transform:scale(1)}
+}
+.hero-overlay{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(180deg,
+      rgba(26,21,18,0.62) 0%,
+      rgba(26,21,18,0.55) 30%,
+      rgba(26,21,18,0.72) 60%,
+      rgba(26,21,18,0.94) 90%,
+      rgba(26,21,18,1.00) 100%);
+}
+.hero-content{
+  position:relative;z-index:1;
+  max-width:640px;
+  margin:0 auto;
+  padding:0 var(--s-5);
+  text-align:center;
+}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:var(--s-2);
+  padding:var(--s-1) var(--s-4);
+  background:rgba(255,107,0,0.14);
+  border:1px solid rgba(255,107,0,0.35);
+  border-radius:var(--r-pill);
+  font-size:12px;font-weight:600;
+  color:#FFB98A;
+  letter-spacing:0;
+  margin-bottom:var(--s-5);
+}
+.hero-kicker .icon{width:13px;height:13px}
+.hero h1{
+  font-size:clamp(2rem,5vw,3.5rem);
+  line-height:1.1;font-weight:700;
+  letter-spacing:0;
+  color:var(--ink-dark);
+  margin-bottom:var(--s-4);
+  text-shadow:0 2px 20px rgba(0,0,0,0.5);
+  text-wrap:balance;
+}
+.hero h1 em{font-style:normal;color:var(--accent);display:inline}
+.hero p{
+  font-size:clamp(1rem,2vw,1.15rem);
+  line-height:1.7;
+  color:rgba(245,240,232,0.88);
+  max-width:520px;margin:0 auto var(--s-6);
+  text-wrap:pretty;
+}
+.hero-cta{
+  display:inline-flex;align-items:center;gap:var(--s-3);
+  padding:var(--s-3) var(--s-6);
+  background:var(--accent);color:var(--on-accent);
+  border-radius:var(--r-3);
+  font-size:16px;font-weight:600;
+  box-shadow:var(--shadow-btn);
+  transition:transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease),background var(--dur-fast) var(--ease);
+}
+.hero-cta:hover{background:var(--accent-hover);transform:translateY(-2px);box-shadow:var(--shadow-btn-hover)}
+.hero-cta:active{transform:translateY(0) scale(0.98);box-shadow:var(--shadow-btn-active)}
+
+/* ===== STATS — floating between sections ===== */
+.stats-wrap{
+  position:relative;z-index:3;
+  margin-top:-70px;
+  margin-bottom:var(--s-9);
+  padding:0 var(--s-5);
+}
+.stats{
+  max-width:1000px;margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:var(--s-3);
+}
+.stat-card{
+  background:var(--bg-card);
+  border:1px solid var(--line);
+  border-radius:var(--r-4);
+  padding:var(--s-5) var(--s-4);
+  text-align:center;
+  box-shadow:var(--shadow-hero);
+  transition:transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease);
+}
+.stat-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-3)}
+.stat-num{
+  display:block;
+  font-size:36px;font-weight:700;
+  color:var(--accent);line-height:1.1;
+  font-variant-numeric:tabular-nums;
+  margin-bottom:var(--s-1);
+}
+.stat-label{
+  font-size:13px;color:var(--ink-soft);
+  display:block;font-weight:500;
+}
+
+/* ===== TAGLINE ===== */
+.tagline{
+  background:var(--bg-mid);
+  padding:var(--s-9) 0;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+.tagline::before,
+.tagline::after{
+  content:'';
+  position:absolute;left:50%;
+  transform:translateX(-50%);
+  width:64px;height:3px;
+  background:var(--accent);
+  border-radius:2px;
+}
+.tagline::before{top:var(--s-8)}
+.tagline::after{bottom:var(--s-8)}
+.tagline-inner{
+  position:relative;
+  max-width:800px;margin:0 auto;
+  padding:var(--s-6) var(--s-5);
+}
+.tagline p{
+  font-size:clamp(1.5rem,3.8vw,2.25rem);
+  line-height:1.45;font-weight:600;
+  color:rgba(26,21,18,0.16);
+  text-wrap:balance;
+}
+.tagline .w{
+  display:inline-block;
+  transition:color 700ms var(--ease);
+}
+.tagline .w.on{color:var(--ink)}
+
+/* ===== SECTIONS ===== */
+.section{padding:var(--s-11) 0}
+.section--light{background:var(--bg-light)}
+.section--mid{background:var(--bg-mid)}
+.section--white{background:var(--bg-card)}
+.section-head{
+  text-align:center;margin-bottom:var(--s-8);
+  max-width:640px;margin-inline:auto;
+}
+.section-head h2{
+  font-size:clamp(1.6rem,3.5vw,2.1rem);
+  font-weight:700;line-height:1.25;
+  display:inline-flex;align-items:center;gap:var(--s-3);
+  color:var(--ink);
+  text-wrap:balance;
+  position:relative;
+  padding-inline-start:var(--s-5);
+}
+.section-head h2::before{
+  content:'';
+  position:absolute;
+  inset-inline-start:0;
+  top:50%;transform:translateY(-50%);
+  width:4px;height:1em;
+  border-radius:2px;
+  background:linear-gradient(180deg,
+    var(--accent) 0%,
+    #FFB800 25%,
+    var(--accent) 50%,
+    #E55F00 75%,
+    var(--accent) 100%);
+  background-size:100% 200%;
+  animation:spinBar 2.8s linear infinite;
+}
+@keyframes spinBar{
+  0%{background-position:0 0}
+  100%{background-position:0 200%}
+}
+#testimonials .section-head h2::before{
+  height:1.15em;
+}
+.section-head p{
+  font-size:15px;color:var(--ink-soft);
+  margin-top:var(--s-3);
+  text-wrap:pretty;
+}
+
+/* ===== SERVICES — 3D hover ===== */
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:var(--s-4);
+  perspective:1200px;
+}
+.service{
+  position:relative;
+  background:var(--bg-card);
+  border:1px solid var(--line);
+  border-radius:var(--r-4);
+  padding:var(--s-6);
+  box-shadow:var(--shadow-2);
+  transform-style:preserve-3d;
+  transition:
+    transform 400ms var(--ease),
+    box-shadow 400ms var(--ease),
+    border-color 400ms var(--ease);
+}
+@media (hover:hover) and (pointer:fine){
+  .service:hover{
+    transform:translateY(-8px) rotateX(3deg) rotateY(-3deg) translateZ(10px);
+    border-color:rgba(255,107,0,0.30);
+    box-shadow:var(--shadow-3);
+  }
+  .service:hover .service-icon{
+    transform:translateZ(30px) rotate(-6deg) scale(1.06);
+  }
+}
+.service:active{transform:scale(0.98)}
+.service-icon{
+  width:52px;height:52px;
+  background:var(--accent-soft);
+  border:1px solid rgba(255,107,0,0.20);
+  border-radius:var(--r-3);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--accent);font-size:22px;
+  margin-bottom:var(--s-4);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.8);
+  transform:translateZ(0);
+  transition:transform 400ms var(--ease);
+}
+.service h3{
+  font-size:17px;font-weight:700;
+  margin-bottom:var(--s-2);line-height:1.4;
+  color:var(--ink);
+}
+.service p{font-size:14px;line-height:1.7;color:var(--ink-soft)}
+
+/* ===== GALLERY ===== */
+.gallery-scroll{
+  display:flex;gap:var(--s-4);
+  overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  padding:var(--s-2) 0 var(--s-4);
+  scrollbar-width:thin;
+}
+.gallery-scroll::-webkit-scrollbar{height:4px}
+.gallery-scroll::-webkit-scrollbar-track{background:var(--line);border-radius:2px}
+.gallery-scroll::-webkit-scrollbar-thumb{background:var(--accent);border-radius:2px}
+.gallery-item{
+  min-width:300px;height:280px;flex:0 0 auto;
+  border-radius:var(--r-4);
+  overflow:hidden;position:relative;
+  scroll-snap-align:center;
+  background:var(--bg-mid);
+  box-shadow:var(--shadow-2);
+}
+.gallery-item img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform 700ms var(--ease);
+}
+.gallery-item:hover img{transform:scale(1.05)}
+.gallery-cap{
+  position:absolute;inset-inline:0;bottom:0;
+  padding:var(--s-5) var(--s-4) var(--s-4);
+  color:#fff;font-size:14px;font-weight:500;
+  background:linear-gradient(transparent,rgba(26,21,18,0.90));
+}
+.gallery-nav{display:flex;justify-content:center;gap:var(--s-3);margin-top:var(--s-5)}
+.gallery-btn{
+  width:48px;height:48px;border-radius:var(--r-3);
+  background:var(--bg-card);
+  border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--ink);
+  box-shadow:var(--shadow-1);
+  transition:background var(--dur-fast) var(--ease),color var(--dur-fast) var(--ease),transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease),opacity var(--dur-fast) var(--ease);
+}
+.gallery-btn:hover:not(:disabled){
+  background:var(--accent);color:var(--on-accent);
+  border-color:transparent;box-shadow:var(--shadow-btn);
+  transform:translateY(-1px);
+}
+.gallery-btn:active:not(:disabled){transform:translateY(0) scale(0.96);box-shadow:var(--shadow-btn-active)}
+.gallery-btn:disabled{opacity:0.32;cursor:not-allowed;box-shadow:none}
+
+/* ===== AREAS ===== */
+.tabs{
+  display:flex;justify-content:center;gap:var(--s-2);
+  margin-bottom:var(--s-6);
+  overflow-x:auto;
+  padding:var(--s-1);
+  scrollbar-width:none;
+  scroll-snap-type:x mandatory;
+  scroll-behavior:smooth;
+  overscroll-behavior-x:contain;
+}
+.tabs::-webkit-scrollbar{display:none}
+.tab{
+  flex-shrink:0;
+  padding:var(--s-2) var(--s-5);
+  border-radius:var(--r-3);
+  border:1px solid var(--line);
+  background:var(--bg-card);
+  font-size:14px;font-weight:600;color:var(--ink-soft);
+  box-shadow:var(--shadow-1);
+  scroll-snap-align:center;
+  transition:background var(--dur-fast) var(--ease),color var(--dur-fast) var(--ease),border-color var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease);
+}
+.tab:hover{border-color:var(--accent);color:var(--accent)}
+.tab.active{
+  background:var(--accent);color:var(--on-accent);
+  border-color:transparent;box-shadow:var(--shadow-btn);
+}
+.districts{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:var(--s-4);
+}
+.district{
+  background:var(--bg-card);
+  border:1px solid var(--line);
+  border-radius:var(--r-4);
+  padding:var(--s-5);
+  box-shadow:var(--shadow-2);
+  transition:transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease);
+}
+.district:hover{transform:translateY(-2px);box-shadow:var(--shadow-3)}
+.district-head{
+  display:flex;align-items:center;gap:var(--s-3);
+  margin-bottom:var(--s-4);padding-bottom:var(--s-3);
+  border-bottom:1px solid var(--line);
+}
+.district-num{
+  width:40px;height:40px;
+  background:var(--accent);
+  color:var(--on-accent);
+  border-radius:var(--r-2);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:15px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.28);
+}
+.district-title{font-size:16px;font-weight:700;color:var(--ink)}
+.streets{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:var(--s-2);list-style:none;
+}
+.streets li{
+  padding:var(--s-2) var(--s-3);
+  background:var(--bg-light);
+  border-radius:var(--r-2);
+  font-size:13px;
+  display:flex;align-items:center;gap:var(--s-2);
+  color:var(--ink);
+  transition:background var(--dur-fast) var(--ease),color var(--dur-fast) var(--ease);
+}
+.streets li::before{
+  content:'';width:5px;height:5px;border-radius:50%;
+  background:var(--accent);flex-shrink:0;
+}
+.streets li:hover{background:var(--accent-soft);color:var(--accent-hover)}
+
+/* ===== FAQ ===== */
+.faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:var(--s-2)}
+.faq-item{
+  background:var(--bg-card);
+  border:1px solid var(--line);
+  border-radius:var(--r-3);
+  overflow:hidden;
+  box-shadow:var(--shadow-1);
+  transition:box-shadow var(--dur-fast) var(--ease);
+}
+.faq-item:hover{box-shadow:var(--shadow-2)}
+.faq-q{
+  width:100%;padding:var(--s-4) var(--s-5);
+  display:flex;justify-content:space-between;align-items:center;gap:var(--s-4);
+  font-size:15px;font-weight:600;text-align:start;
+  color:var(--ink);
+  transition:background var(--dur-fast) var(--ease);
+}
+.faq-q:hover{background:var(--accent-soft)}
+.faq-q .icon{color:var(--accent);transition:transform var(--dur-fast) var(--ease)}
+.faq-q[aria-expanded="true"] .icon{transform:rotate(180deg)}
+.faq-a{
+  display:grid;grid-template-rows:0fr;
+  transition:grid-template-rows var(--dur-fast) var(--ease);
+}
+.faq-a > div{overflow:hidden}
+.faq-a p{
+  padding:0 var(--s-5) var(--s-4);
+  font-size:14px;line-height:1.8;color:var(--ink-soft);
+  opacity:0;transition:opacity var(--dur-fast) var(--ease) 100ms;
+}
+.faq-a.open{grid-template-rows:1fr}
+.faq-a.open p{opacity:1}
+
+/* ===== TESTIMONIALS ===== */
+.testi-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:var(--s-4);
+}
+.testi{
+  position:relative;
+  background:var(--bg-card);
+  border:1px solid var(--line);
+  border-radius:var(--r-4);
+  padding:var(--s-5) var(--s-5) var(--s-4);
+  box-shadow:var(--shadow-2);
+  transition:transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease);
+}
+.testi:hover{transform:translateY(-3px);box-shadow:var(--shadow-3)}
+.testi::before{
+  content:'"';
+  position:absolute;top:var(--s-2);inset-inline-end:var(--s-4);
+  font-family:Georgia,serif;
+  font-size:60px;line-height:1;
+  color:var(--accent);opacity:0.18;
+}
+.testi-text{
+  font-size:14px;line-height:1.8;color:var(--ink-soft);
+  margin-bottom:var(--s-4);
+}
+.testi-author{
+  display:flex;align-items:center;gap:var(--s-3);
+  padding-top:var(--s-3);
+  border-top:1px solid var(--line);
+}
+.testi-avatar{
+  width:40px;height:40px;
+  background:var(--accent);
+  border-radius:var(--r-2);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--on-accent);font-weight:700;font-size:13px;flex-shrink:0;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.28);
+}
+.testi-name{font-size:14px;font-weight:700;line-height:1.3;color:var(--ink)}
+.testi-role{font-size:12px;color:var(--ink-soft)}
+.testi-stars{color:var(--accent);font-size:11px;margin-top:2px;letter-spacing:1px}
+
+/* ===== CONTACT — horizontal compact rows ===== */
+.contact-list{
+  max-width:720px;margin:0 auto;
+  background:var(--bg-card);
+  border:1px solid var(--line);
+  border-radius:var(--r-4);
+  overflow:hidden;
+  box-shadow:var(--shadow-2);
+}
+.contact-row{
+  display:flex;
+  align-items:center;
+  gap:var(--s-3);
+  padding:var(--s-3) var(--s-4);
+  border-bottom:1px solid var(--line);
+  transition:background var(--dur-fast) var(--ease);
+}
+.contact-row:last-child{border-bottom:none}
+.contact-row:hover{background:var(--accent-soft)}
+.contact-row-icon{
+  width:40px;height:40px;
+  background:var(--accent-soft);
+  border-radius:var(--r-2);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--accent);flex-shrink:0;
+}
+.contact-row-icon .icon{width:18px;height:18px}
+.contact-row-name{
+  font-size:14px;font-weight:600;color:var(--ink);
+  flex-shrink:0;
+  min-width:100px;
+}
+.contact-row-phone{
+  font-size:13px;color:var(--ink-soft);
+  font-variant-numeric:tabular-nums;
+  flex:1;
+}
+.contact-row-action{
+  display:inline-flex;align-items:center;gap:var(--s-1);
+  background:var(--accent);color:var(--on-accent);
+  padding:var(--s-1) var(--s-3);
+  border-radius:var(--r-2);
+  font-size:12px;font-weight:600;
+  box-shadow:var(--shadow-btn);
+  transition:transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease),background var(--dur-fast) var(--ease);
+  flex-shrink:0;
+}
+.contact-row-action:hover{background:var(--accent-hover);transform:translateY(-1px);box-shadow:var(--shadow-btn-hover)}
+.contact-row-action:active{transform:scale(0.96)}
+.contact-row-action .icon{width:14px;height:14px}
+
+.contact-foot{
+  max-width:720px;margin:var(--s-5) auto 0;
+  text-align:center;
+  display:flex;flex-direction:column;gap:var(--s-3);
+}
+.contact-foot-item{
+  display:inline-flex;align-items:center;gap:var(--s-2);
+  font-size:13px;color:var(--ink-soft);
+  padding:var(--s-2) var(--s-4);
+  background:var(--bg-card);
+  border:1px solid var(--line);
+  border-radius:var(--r-3);
+  box-shadow:var(--shadow-1);
+  align-self:center;
+}
+.contact-foot-item .icon{color:var(--accent);width:16px;height:16px}
+.contact-foot-item strong{color:var(--ink);font-weight:600}
+
+/* ===== FOOTER ===== */
+.footer{
+  background:var(--bg-deep);
+  color:var(--muted-dark);
+  padding:var(--s-10) 0 calc(var(--s-11) + var(--s-8));
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:var(--s-7);
+  margin-bottom:var(--s-7);
+}
+.footer h4{
+  font-size:14px;font-weight:700;
+  color:var(--ink-dark);
+  margin-bottom:var(--s-4);
+}
+.footer p,.footer a{
+  font-size:13px;line-height:1.8;
+  color:var(--muted-dark);
+}
+.footer a{
+  display:flex;align-items:center;gap:var(--s-2);
+  margin-bottom:var(--s-2);
+  transition:color var(--dur-fast) var(--ease);
+}
+.footer a:hover{color:var(--accent)}
+.footer a .icon{color:var(--accent);width:16px;height:16px}
+.footer-phones{display:flex;flex-wrap:wrap;gap:var(--s-2)}
+.footer-phones a{
+  background:rgba(245,240,232,0.06);
+  border:1px solid rgba(245,240,232,0.10);
+  color:var(--ink-dark);
+  padding:var(--s-1) var(--s-3);
+  border-radius:var(--r-2);
+  font-size:12px;margin:0;
+  transition:background var(--dur-fast) var(--ease),color var(--dur-fast) var(--ease),border-color var(--dur-fast) var(--ease);
+}
+.footer-phones a:hover{background:var(--accent);color:var(--on-accent);border-color:transparent}
+.footer-bottom{
+  text-align:center;
+  padding-top:var(--s-6);
+  border-top:1px solid var(--line-dark);
+  font-size:12px;
+  color:rgba(245,240,232,0.5);
+  line-height:2;
+}
+.footer-note{color:var(--accent);font-weight:600}
+
+/* ===== DOCK ===== */
+.dock-wrap{
+  position:fixed;bottom:var(--s-4);inset-inline:0;z-index:990;
+  display:flex;justify-content:center;
+  padding:0 var(--s-4);
+  pointer-events:none;
+}
+.dock{
+  pointer-events:auto;
+  display:flex;align-items:flex-end;gap:var(--s-1);
+  background:rgba(245,240,232,0.90);
+  backdrop-filter:blur(24px) saturate(160%);
+  -webkit-backdrop-filter:blur(24px) saturate(160%);
+  border:1px solid rgba(26,21,18,0.10);
+  border-radius:var(--r-5);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.98),
+    0 4px 8px rgba(26,21,18,0.06),
+    0 16px 32px rgba(26,21,18,0.10);
+  padding:var(--s-2) var(--s-3);
+}
+.dock-item{
+  display:flex;flex-direction:column;align-items:center;gap:2px;
+  padding:var(--s-2) var(--s-3);
+  border-radius:var(--r-3);
+  font-size:11px;font-weight:500;
+  color:var(--ink-soft);
+  min-width:52px;
+  transition:color var(--dur-fast) var(--ease),background var(--dur-fast) var(--ease);
+}
+.dock-item .icon{font-size:18px}
+.dock-item:hover{color:var(--ink);background:rgba(26,21,18,0.05)}
+.dock-item.active{color:var(--accent)}
+.dock-center{
+  width:56px;height:56px;
+  margin:0 var(--s-2) var(--s-1);
+  background:var(--accent);
+  color:var(--on-accent);
+  border-radius:var(--r-4);
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.28),
+    inset 0 -1px 0 rgba(26,21,18,0.14),
+    0 4px 8px rgba(255,107,0,0.32),
+    0 12px 24px rgba(255,107,0,0.32);
+  transition:transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease),background var(--dur-fast) var(--ease);
+}
+.dock-center:hover{
+  background:var(--accent-hover);
+  transform:translateY(-2px);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.28),
+    inset 0 -1px 0 rgba(26,21,18,0.14),
+    0 8px 16px rgba(255,107,0,0.36),
+    0 20px 40px rgba(255,107,0,0.36);
+}
+.dock-center:active{transform:scale(0.95)}
+
+/* ===== SHEET ===== */
+.sheet-backdrop{
+  position:fixed;inset:0;z-index:1100;
+  background:rgba(26,21,18,0.45);
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter:blur(4px);
+  opacity:0;visibility:hidden;
+  transition:opacity var(--dur-fast) var(--ease),visibility var(--dur-fast) var(--ease);
+}
+.sheet-backdrop.open{opacity:1;visibility:visible}
+.sheet{
+  position:fixed;left:50%;bottom:0;
+  transform:translateX(-50%) translateY(100%);
+  width:100%;max-width:480px;z-index:1101;
+  background:rgba(245,240,232,0.96);
+  backdrop-filter:blur(28px) saturate(160%);
+  -webkit-backdrop-filter:blur(28px) saturate(160%);
+  border:1px solid rgba(26,21,18,0.10);
+  border-radius:var(--r-5) var(--r-5) 0 0;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.98),
+    0 -12px 48px rgba(26,21,18,0.15);
+  padding:var(--s-5) var(--s-5) calc(var(--s-5) + env(safe-area-inset-bottom));
+  transition:transform var(--dur) var(--ease);
+  max-height:85vh;overflow-y:auto;
+}
+.sheet.open{transform:translateX(-50%) translateY(0)}
+.sheet-handle{
+  width:36px;height:4px;
+  background:rgba(26,21,18,0.18);
+  border-radius:2px;margin:0 auto var(--s-4);
+}
+.sheet h3{
+  font-size:18px;font-weight:700;
+  margin-bottom:var(--s-4);color:var(--ink);
+}
+.sheet-actions{display:flex;flex-direction:column;gap:var(--s-2)}
+.sheet-action{
+  display:flex;align-items:center;gap:var(--s-3);
+  padding:var(--s-3) var(--s-4);
+  border-radius:var(--r-3);
+  background:rgba(255,255,255,0.72);
+  border:1px solid var(--line);
+  font-size:14px;font-weight:600;
+  color:var(--ink);
+  box-shadow:var(--shadow-1);
+  transition:background var(--dur-fast) var(--ease),transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease);
+  text-align:start;width:100%;
+}
+.sheet-action:hover{background:var(--bg-card);box-shadow:var(--shadow-2)}
+.sheet-action:active{transform:scale(0.98)}
+.sheet-action .icon-box{
+  width:36px;height:36px;
+  border-radius:var(--r-2);
+  display:flex;align-items:center;justify-content:center;
+  background:var(--accent-soft);
+  color:var(--accent);flex-shrink:0;
+}
+.sheet-action .icon-box .icon{width:18px;height:18px}
+.sheet-action small{
+  display:block;font-size:12px;
+  color:var(--ink-soft);font-weight:400;
+  margin-top:2px;
+}
+.sheet-close{
+  position:absolute;top:var(--s-3);inset-inline-end:var(--s-3);
+  width:32px;height:32px;border-radius:50%;
+  background:rgba(26,21,18,0.08);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--ink-soft);
+  transition:background var(--dur-fast) var(--ease);
+}
+.sheet-close:hover{background:rgba(26,21,18,0.15)}
+
+/* ===== REVEAL ===== */
+.reveal{
+  opacity:0;transform:translateY(24px);
+  transition:opacity 800ms var(--ease),transform 800ms var(--ease);
+}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:0.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:0.01ms !important;
+    scroll-behavior:auto !important;
+  }
+  .reveal{opacity:1;transform:none}
+  .loader-bar{width:100%}
+  .tagline .w{color:var(--ink) !important}
+  .hero-bg img{animation:none;transform:none}
+  .section-head h2::before{animation:none}
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:992px){
+  .nav{display:none}
+}
+@media (max-width:768px){
+  .hero{padding:160px 0 100px}
+  .stats-wrap{margin-top:-60px}
+  .stats{grid-template-columns:repeat(3,1fr);gap:var(--s-2)}
+  .stat-card{padding:var(--s-4) var(--s-2)}
+  .stat-num{font-size:26px}
+  .stat-label{font-size:11px}
+  .tagline{padding:var(--s-8) 0}
+  .tagline::before{top:var(--s-6)}
+  .tagline::after{bottom:var(--s-6)}
+  .section{padding:var(--s-9) 0}
+  .gallery-item{min-width:260px;height:240px}
+  .sheet{max-width:100%}
+  .contact-row-name{min-width:80px;font-size:13px}
+  .contact-row-phone{font-size:12px}
+  .contact-row-action{padding:var(--s-1) var(--s-2);font-size:11px}
+}
+@media (max-width:480px){
+  .hero{padding:140px 0 90px}
+  .hero-kicker{font-size:11px}
+  .stats-wrap{margin-top:-50px;padding:0 var(--s-4)}
+  .stat-card{padding:var(--s-3) var(--s-2)}
+  .stat-num{font-size:22px}
+  .stat-label{font-size:10px}
+  .dock-item span{display:none}
+  .dock-item{min-width:44px;padding:var(--s-2)}
+  .dock-center{width:50px;height:50px;font-size:18px;margin:0 var(--s-1) var(--s-1)}
+  .logo-sub{display:none}
+  .header-cta span{display:none}
+  .header-cta{padding:var(--s-2) var(--s-3)}
+  .gallery-item{min-width:240px;height:220px}
+  .contact-row{gap:var(--s-2);padding:var(--s-3)}
+  .contact-row-icon{width:36px;height:36px}
+  .contact-row-name{min-width:70px;font-size:13px}
+}
+@media (min-width:993px){
+  .dock-wrap{display:none}
+}
+@supports not (backdrop-filter:blur(1px)){
+  .header-bar,.dock,.sheet{background:rgba(245,240,232,0.99)}
 }
 </style>
 </head>
 <body>
-<!-- لودر انیمیشنی -->
-<div class="loader" id="loader">
-<div class="loader-content">
-<div class="loader-truck">🚛</div>
-<div class="loader-text">در حال بارگذاری خدمات حرفه‌ای...</div>
+
+<a href="#main" class="skip-link">پرش به محتوای اصلی</a>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <defs>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+    <symbol id="i-services" viewBox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+    <symbol id="i-images" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-chev-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-chev-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-chev-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+    <symbol id="i-pickaxe" viewBox="0 0 24 24"><path d="M14.531 12.469 6.619 20.38a1 1 0 1 1-3-3l7.912-7.912"/><path d="M15.686 4.314A12.5 12.5 0 0 0 5.461 2.958 1 1 0 0 0 5.58 4.71a22 22 0 0 1 6.318 3.393"/><path d="M17.7 3.7a1 1 0 0 0-1.4 0l-4.6 4.6a1 1 0 0 0 0 1.4l2.6 2.6a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"/><path d="M19.686 8.314a12.501 12.501 0 0 1 1.356 10.225 1 1 0 0 1-1.751-.119 22 22 0 0 0-3.393-6.318"/></symbol>
+    <symbol id="i-hard-hat" viewBox="0 0 24 24"><path d="M2 18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1z"/><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5"/><path d="M4 15v-3a6 6 0 0 1 6-6"/><path d="M14 6a6 6 0 0 1 6 6v3"/></symbol>
+    <symbol id="i-headphones" viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2"/><path d="M22 10h-5a2 2 0 0 0 0 4h5v-4z"/></symbol>
+  </defs>
+</svg>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <div class="loader-mark"><svg class="icon"><use href="#i-truck"/></svg></div>
+    <div class="loader-title">باکس قادری</div>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+  </div>
 </div>
-</div>
-<!-- هدر ثابت -->
-<header>
-<div class="container">
-<div class="header-content">
-<div class="logo-section">
-<div class="logo">باکس</div>
-<div class="logo-text">
-قادری
-<span>حمل خاک و نخاله</span>
-</div>
-</div>
-<nav class="nav-menu">
-<a href="#home" class="nav-item">خانه</a>
-<a href="#services" class="nav-item">خدمات</a>
-<a href="#gallery" class="nav-item">گالری</a>
-<a href="#areas" class="nav-item">مناطق</a>
-<a href="#faq" class="nav-item">سوالات</a>
-<a href="#contact" class="nav-item">تماس</a>
-</nav>
-<a href="tel:09152000370" class="header-cta">
-<i class="fas fa-phone-alt"></i>
-09152000370
-</a>
-</div>
-</div>
+<noscript><style>#loader{display:none}</style></noscript>
+
+<header class="header">
+  <div class="header-bar" id="headerBar">
+    <div class="logo">
+      <div class="logo-mark" aria-hidden="true"><svg class="icon"><use href="#i-truck"/></svg></div>
+      <div>
+        <div class="logo-name">باکس قادری</div>
+        <div class="logo-sub">حمل خاک و نخاله</div>
+      </div>
+    </div>
+    <nav class="nav" aria-label="ناوبری اصلی">
+      <a href="#services">خدمات</a>
+      <a href="#gallery">گالری</a>
+      <a href="#areas">مناطق</a>
+      <a href="#faq">سوالات</a>
+      <a href="#contact">تماس</a>
+    </nav>
+    <a href="tel:+989152000370" class="header-cta">
+      <svg class="icon"><use href="#i-phone"/></svg>
+      <span>۰۹۱۵۲۰۰۰۳۷۰</span>
+    </a>
+  </div>
 </header>
-<!-- بخش اصلی -->
+
+<main id="main">
+
 <section class="hero" id="home">
-<div class="container">
-<div class="hero-content">
-<h1>حرفه‌ای‌ترین خدمات حمل خاک و نخاله در مشهد</h1>
-<p>با ۱۵ سال سابقه درخشان، بیش از ۵۰ باکس آماده و تیمی متخصص، پروژه ساختمانی شما را با بهترین کیفیت و سریع‌ترین زمان انجام می‌دهیم.</p>
-<div class="hero-stats">
-<div class="stat-item">
-<span class="stat-number">۱۵+</span>
-<span class="stat-label">سال تجربه</span>
-</div>
-<div class="stat-item">
-<span class="stat-number">۵۰+</span>
-<span class="stat-label">باکس آماده</span>
-</div>
-<div class="stat-item">
-<span class="stat-number">۵۰۰۰+</span>
-<span class="stat-label">پروژه موفق</span>
-</div>
-<div class="stat-item">
-<span class="stat-number">۱۰۰٪</span>
-<span class="stat-label">رضایت مشتری</span>
-</div>
-</div>
-</div>
-</div>
+  <div class="hero-bg">
+    <img src="images/truck-main.jpg" alt="" aria-hidden="true" loading="eager" fetchpriority="high">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-kicker">
+      <svg class="icon"><use href="#i-clock"/></svg>
+      ۷ صبح تا ۵ بعد از ظهر، همه روزه
+    </div>
+    <h1>حمل خاک و نخاله، <em>بدون توقف پروژه</em></h1>
+    <p>در منطقه ۳ و ۴ مشهد. ۱۵ سال سابقه، ۵۰ باکس آماده، تیمی که وقتی می‌گویید «فردا»، فردا آنجاست.</p>
+    <a href="tel:+989152000370" class="hero-cta">
+      <svg class="icon"><use href="#i-phone"/></svg>
+      تماس برای هماهنگی
+    </a>
+  </div>
 </section>
-<!-- بخش خدمات -->
-<section class="services" id="services">
-<div class="container">
-<div class="section-title">
-<h2>خدمات تخصصی ما</h2>
-<p>با بهره‌گیری از جدیدترین تجهیزات و تیم متخصص، کلیه خدمات ساختمانی را با بالاترین کیفیت ارائه می‌دهیم</p>
+
+<div class="stats-wrap">
+  <div class="stats">
+    <div class="stat-card">
+      <span class="stat-num" data-count="15">۰</span>
+      <span class="stat-label">سال تجربه</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num" data-count="50">۰</span>
+      <span class="stat-label">باکس آماده</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num" data-count="5000">۰</span>
+      <span class="stat-label">پروژه موفق</span>
+    </div>
+  </div>
 </div>
-<div class="services-grid">
-<div class="service-card">
-<div class="service-icon">
-<i class="fas fa-truck-loading"></i>
-</div>
-<h3>حمل خاک و نخاله</h3>
-<p>حمل ایمن و سریع کلیه مصالح ساختمانی با بیش از ۵۰ باکس مجهز در تمام مناطق مشهد</p>
-</div>
-<div class="service-card">
-<div class="service-icon">
-<i class="fas fa-excavator"></i>
-</div>
-<h3>خاکبرداری مکانیزه</h3>
-<p>خاکبرداری با ماشین‌آلات مدرن و تیم مجرب در کمترین زمان ممکن</p>
-</div>
-<div class="service-card">
-<div class="service-icon">
-<i class="fas fa-hard-hat"></i>
-</div>
-<h3>کارگران حرفه‌ای</h3>
-<p>تیم کارگری آموزش دیده و با تجربه برای انجام دقیق و سریع پروژه‌ها</p>
-</div>
-<div class="service-card">
-<div class="service-icon">
-<i class="fas fa-headset"></i>
-</div>
-<h3>پشتیبانی ۲۴ ساعته</h3>
-<p>آماده خدمت‌رسانی در تمام ساعات شبانه‌روز و روزهای تعطیل</p>
-</div>
-</div>
-</div>
+
+<section class="tagline" aria-label="جمله کلیدی">
+  <div class="tagline-inner">
+    <p id="taglineText">نخاله‌ها را ما می‌بریم، تا خیال‌تان از ادامهٔ کار راحت باشد.</p>
+  </div>
 </section>
-<!-- بخش قیمت -->
-<section class="pricing" id="pricing">
-<div class="container">
-<div class="pricing-box">
-قیمت هر باکس: ۷۰۰,۰۰۰ تومان
-</div>
-</div>
+
+<section class="section section--white" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>خدمات تخصصی</h2>
+      <p>چهار خدمت اصلی، برای پروژه‌هایی که معطل نمی‌مانند.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service reveal">
+        <div class="service-icon"><svg class="icon"><use href="#i-truck"/></svg></div>
+        <h3>حمل خاک و نخاله</h3>
+        <p>۵۰ باکس مجهز، حمل ایمن در تمام خیابان‌های منطقه ۳ و ۴.</p>
+      </div>
+      <div class="service reveal">
+        <div class="service-icon"><svg class="icon"><use href="#i-pickaxe"/></svg></div>
+        <h3>خاکبرداری مکانیزه</h3>
+        <p>ماشین‌آلات مدرن و تیم مجرب، در کمترین زمان.</p>
+      </div>
+      <div class="service reveal">
+        <div class="service-icon"><svg class="icon"><use href="#i-hard-hat"/></svg></div>
+        <h3>کارگران حرفه‌ای</h3>
+        <p>بارگیری، تخلیه و کارهای ساختمانی با تیم آموزش‌دیده.</p>
+      </div>
+      <div class="service reveal">
+        <div class="service-icon"><svg class="icon"><use href="#i-headphones"/></svg></div>
+        <h3>پشتیبانی ۲۴ ساعته</h3>
+        <p>پاسخ‌گویی تلفنی در تمام ساعات و روزهای تعطیل.</p>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- گالری تصاویر - کاروسل افقی -->
-<section class="gallery" id="gallery">
-<div class="container">
-<div class="gallery-header">
-<h2>گالری تصاویر</h2>
-<p>مشاهده نمونه‌کارها و تجهیزات مدرن ما</p>
-</div>
-<div class="gallery-carousel">
-<div class="gallery-scroll" id="galleryScroll">
-<div class="gallery-item">
-<img src="images/truck-main.jpg" alt="خاور کمپرسی 608" class="gallery-img">
-<div class="gallery-caption">خاور کمپرسی 608 - تجهیزات استاندارد</div>
-</div>
-<div class="gallery-item">
-<img src="images/orange-truck.jpg" alt="باکس‌های نارنجی" class="gallery-img">
-<div class="gallery-caption">صف باکس‌های نارنجی آماده</div>
-</div>
-<div class="gallery-item">
-<img src="images/worker-loading.jpg" alt="تیم کارگران" class="gallery-img">
-<div class="gallery-caption">تیم کارگران در حال بارگیری</div>
-</div>
-<div class="gallery-item">
-<img src="images/site-service.jpg" alt="خدمات در محل" class="gallery-img">
-<div class="gallery-caption">خدمات حمل نخاله در محل پروژه</div>
-</div>
-<div class="gallery-item">
-<img src="images/truck-main.jpg" alt="اتاق فرمان" class="gallery-img">
-<div class="gallery-caption">اتاق فرمان خاور کمپرسی</div>
-</div>
-<div class="gallery-item">
-<img src="images/orange-truck.jpg" alt="بارگیری نخاله" class="gallery-img">
-<div class="gallery-caption">بارگیری حرفه‌ای نخاله</div>
-</div>
-</div>
-<div class="carousel-nav">
-<button class="carousel-btn" id="prevBtn">
-<i class="fas fa-arrow-right"></i>
-</button>
-<button class="carousel-btn" id="nextBtn">
-<i class="fas fa-arrow-left"></i>
-</button>
-</div>
-<div class="carousel-dots" id="carouselDots">
-<span class="dot active"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-<span class="dot"></span>
-</div>
-</div>
-</div>
+
+<section class="section section--mid" id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>گالری</h2>
+      <p>تجهیزات و نمونه‌کارها.</p>
+    </div>
+    <div class="gallery-scroll" id="galleryScroll" role="region" aria-label="گالری تصاویر">
+      <div class="gallery-item">
+        <img src="images/truck-main.jpg" alt="خاور کمپرسی ۶۰۸ در حالت آمادهٔ کار" width="300" height="280" loading="eager">
+        <div class="gallery-cap">خاور کمپرسی ۶۰۸</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/orange-truck.jpg" alt="ردیف باکس‌های نارنجی آمادهٔ حمل" width="300" height="280" loading="lazy">
+        <div class="gallery-cap">صف باکس‌های آماده</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/worker-loading.jpg" alt="تیم کارگران در حال بارگیری نخاله" width="300" height="280" loading="lazy">
+        <div class="gallery-cap">بارگیری حرفه‌ای</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/site-service.jpg" alt="خدمات حمل نخاله در محل پروژه" width="300" height="280" loading="lazy">
+        <div class="gallery-cap">در محل پروژه</div>
+      </div>
+    </div>
+    <div class="gallery-nav">
+      <button class="gallery-btn" id="gPrev" aria-label="تصویر قبلی" disabled>
+        <svg class="icon"><use href="#i-chev-right"/></svg>
+      </button>
+      <button class="gallery-btn" id="gNext" aria-label="تصویر بعدی">
+        <svg class="icon"><use href="#i-chev-left"/></svg>
+      </button>
+    </div>
+  </div>
 </section>
-<!-- مناطق تحت پوشش -->
-<section class="areas" id="areas">
-<div class="container">
-<div class="section-title">
-<h2>مناطق تحت پوشش</h2>
-<p>خدمات ما در تمام خیابان‌های منطقه 3 و 4 مشهد ارائه می‌شود</p>
-</div>
-<div class="areas-tabs">
-<button class="area-tab active" data-district="all">همه مناطق</button>
-<button class="area-tab" data-district="3">منطقه 3</button>
-<button class="area-tab" data-district="4">منطقه 4</button>
-</div>
-<div class="areas-content">
-<div class="area-district" id="district-3" data-district="3">
-<div class="district-header">
-<div class="district-number">۳</div>
-<div class="district-title">منطقه ۳ مشهد</div>
-</div>
-<ul class="streets-list">
-<li><span class="street-highlight">خیرآباد</span></li>
-<li><span class="street-highlight">فاطمیه</span></li>
-<li><span class="street-highlight">گاز</span></li>
-<li><span class="street-highlight">مسلم</span></li>
-<li><span class="street-highlight">رسالت</span></li>
-<li><span class="street-highlight">راه آهن</span></li>
-<li><span class="street-highlight">بلال</span></li>
-<li><span class="street-highlight">قائم</span></li>
-<li><span class="street-highlight">بهمن</span></li>
-<li><span class="street-highlight">خواجه ربيع</span></li>
-<li><span class="street-highlight">مهر مادر</span></li>
-<li><span class="street-highlight">قرقي</span></li>
-</ul>
-</div>
-<div class="area-district" id="district-4" data-district="4">
-<div class="district-header">
-<div class="district-number">۴</div>
-<div class="district-title">منطقه ۴ مشهد</div>
-</div>
-<ul class="streets-list">
-<li><span class="street-highlight">مهرگان</span></li>
-<li><span class="street-highlight">عباس آباد</span></li>
-<li><span class="street-highlight">سیس آباد</span></li>
-<li><span class="street-highlight">طبرسی شمالی</span></li>
-<li><span class="street-highlight">ایثار</span></li>
-<li><span class="street-highlight">فجر</span></li>
-<li><span class="street-highlight">وحید</span></li>
-<li><span class="street-highlight">کوی مهدی</span></li>
-<li><span class="street-highlight">گلشور (بهشت)</span></li>
-<li><span class="street-highlight">طلاب</span></li>
-<li><span class="street-highlight">پنج تن</span></li>
-<li><span class="street-highlight">التيمور</span></li>
-<li><span class="street-highlight">دروی</span></li>
-<li><span class="street-highlight">شهيد قربانی</span></li>
-</ul>
-</div>
-</div>
-</div>
+
+<section class="section section--white" id="areas">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>مناطق تحت پوشش</h2>
+      <p>تمام خیابان‌های منطقه ۳ و ۴ مشهد.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="فیلتر مناطق">
+      <button class="tab active" data-d="all" role="tab" aria-selected="true">همه</button>
+      <button class="tab" data-d="3" role="tab" aria-selected="false">منطقه ۳</button>
+      <button class="tab" data-d="4" role="tab" aria-selected="false">منطقه ۴</button>
+    </div>
+    <div class="districts">
+      <div class="district reveal" data-d="3">
+        <div class="district-head">
+          <div class="district-num">۳</div>
+          <div class="district-title">منطقه ۳</div>
+        </div>
+        <ul class="streets">
+          <li>خیرآباد</li><li>فاطمیه</li><li>گاز</li><li>مسلم</li><li>رسالت</li><li>راه آهن</li>
+          <li>بلال</li><li>قائم</li><li>بهمن</li><li>خواجه ربیع</li><li>مهر مادر</li><li>قرقی</li>
+        </ul>
+      </div>
+      <div class="district reveal" data-d="4">
+        <div class="district-head">
+          <div class="district-num">۴</div>
+          <div class="district-title">منطقه ۴</div>
+        </div>
+        <ul class="streets">
+          <li>مهرگان</li><li>عباس آباد</li><li>سیس آباد</li><li>طبرسی شمالی</li><li>ایثار</li><li>فجر</li>
+          <li>وحید</li><li>کوی مهدی</li><li>گلشور</li><li>طلاب</li><li>پنج تن</li><li>التیمور</li><li>دروی</li><li>شهید قربانی</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- بخش سوالات متداول -->
-<section class="faq" id="faq">
-<div class="container">
-<div class="section-title">
-<h2>سوالات متداول</h2>
-<p>پاسخ به پرسش‌های رایج مشتریان</p>
-</div>
-<div class="faq-container">
-<div class="faq-item">
-<div class="faq-question">
-<h3>قیمت حمل نخاله چگونه محاسبه می‌شود؟</h3>
-<i class="fas fa-chevron-down"></i>
-</div>
-<div class="faq-answer">
-<p>قیمت بر اساس تعداد باکس و مسافت محاسبه می‌شود. هر باکس 700،000 تومان.</p>
-</div>
-</div>
-<div class="faq-item">
-<div class="faq-question">
-<h3>زمان حمل چقدر طول می‌کشد؟</h3>
-<i class="fas fa-chevron-down"></i>
-</div>
-<div class="faq-answer">
-<p>معمولاً در کمتر از 2 ساعت در محل حاضر می‌شویم.</p>
-</div>
-</div>
-<div class="faq-item">
-<div class="faq-question">
-<h3>آیا برای پروژه‌های بزرگ تخفیف دارید؟</h3>
-<i class="fas fa-chevron-down"></i>
-</div>
-<div class="faq-answer">
-<p>بله، برای پروژه‌های بالای 5 باکس تخفیف ویژه ارائه می‌شود.</p>
-</div>
-</div>
-</div>
-</div>
+
+<section class="section section--mid" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>سوالات متداول</h2>
+      <p>چیزهایی که قبل از تماس خوب است بدانید.</p>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="fa1" id="fq1">
+          <span>چقدر زمان می‌برد تا در محل حاضر شوید؟</span>
+          <svg class="icon"><use href="#i-chev-down"/></svg>
+        </button>
+        <div class="faq-a" id="fa1" role="region" aria-labelledby="fq1"><div><p>در محدوده منطقه ۳ و ۴، معمولاً کمتر از ۲ ساعت. برای هماهنگی دقیق، تماس تلفنی بهترین راه است.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="fa2" id="fq2">
+          <span>برای پروژه‌های بزرگ چه ترتیبی دارید؟</span>
+          <svg class="icon"><use href="#i-chev-down"/></svg>
+        </button>
+        <div class="faq-a" id="fa2" role="region" aria-labelledby="fq2"><div><p>برای پروژه‌های با حجم بالا، تعداد باکس و زمان‌بندی بر اساس پیشرفت کار تنظیم می‌شود. هماهنگی از طریق تماس مستقیم انجام می‌گیرد.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="fa3" id="fq3">
+          <span>آیا خدمات شما شامل بارگیری هم می‌شود؟</span>
+          <svg class="icon"><use href="#i-chev-down"/></svg>
+        </button>
+        <div class="faq-a" id="fa3" role="region" aria-labelledby="fq3"><div><p>در صورت نیاز، تیم کارگری همراه با باکس اعزام می‌شود.</p></div></div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- نظرات مشتریان -->
-<section class="testimonials" id="testimonials">
-<div class="container">
-<div class="section-title">
-<h2>نظرات مشتریان ما</h2>
-<p>رضایت صدها مشتری در سراسر مشهد، گواه کیفیت خدمات ماست</p>
-</div>
-<div class="testimonials-container">
-<div class="testimonial-card">
-<div class="testimonial-text">
-خدمات باکس قادری واقعاً عالی بود. در پروژه ساختمانی ما در منطقه ۳ مشهد، با سرعت باورنکردی حاضر شدند و کار را حرفه‌ای انجام دادند. قیمت‌ها هم بسیار منصفانه بود.
-</div>
-<div class="testimonial-author">
-<div class="author-avatar">م.ر</div>
-<div class="author-info">
-<h4>محمد رضایی</h4>
-<p>پیمانکار ساختمانی</p>
-<div class="author-rating">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-</div>
-</div>
-</div>
-</div>
-<div class="testimonial-card">
-<div class="testimonial-text">
-از خدمات این تیم در خیابان گلشور استفاده کردم. نه تنها کار را سریع انجام دادند، بلکه پس از اتمام کار هم پیگیری کردند تا از رضایت ما مطمئن شوند. واقعاً حرفه‌ای هستند.
-</div>
-<div class="testimonial-author">
-<div class="author-avatar">ا.ح</div>
-<div class="author-info">
-<h4>احمد حسینی</h4>
-<p>مالک ساختمان</p>
-<div class="author-rating">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-</div>
-</div>
-</div>
-</div>
-<div class="testimonial-card">
-<div class="testimonial-text">
-۱۵ سال است که برای پروژه‌هایم از خدمات آقای قادری استفاده می‌کنم. دقت، سرعت و تعهدشان مثال زدنی است. پیشنهاد می‌کنم برای هر نوع خدمات ساختمانی فقط با ایشان کار کنید.
-</div>
-<div class="testimonial-author">
-<div class="author-avatar">ع.ک</div>
-<div class="author-info">
-<h4>علی کریمی</h4>
-<p>سازنده پروژه‌های بزرگ</p>
-<div class="author-rating">
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-<i class="fas fa-star"></i>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+
+<section class="section section--white" id="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>تجربه مشتریان</h2>
+      <p>کسانی که با ما کار کرده‌اند، چه می‌گویند.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi reveal">
+        <div class="testi-text">در پروژه‌ای در منطقه ۳، سریع حاضر شدند و کار را تمیز تحویل دادند. هماهنگی تلفنی ساده بود.</div>
+        <div class="testi-author">
+          <div class="testi-avatar">م.ر</div>
+          <div><div class="testi-name">محمد رضایی</div><div class="testi-role">پیمانکار ساختمانی</div><div class="testi-stars">★★★★★</div></div>
+        </div>
+      </div>
+      <div class="testi reveal">
+        <div class="testi-text">برای نخاله‌های ساختمان در گلشور تماس گرفتم. همان روز آمدند و بعد از کار هم پیگیری کردند.</div>
+        <div class="testi-author">
+          <div class="testi-avatar">ا.ح</div>
+          <div><div class="testi-name">احمد حسینی</div><div class="testi-role">مالک ساختمان</div><div class="testi-stars">★★★★★</div></div>
+        </div>
+      </div>
+      <div class="testi reveal">
+        <div class="testi-text">۱۵ سال است برای پروژه‌هایم از خدمات آقای قادری استفاده می‌کنم. تعهدشان به زمان، مثال‌زدنی است.</div>
+        <div class="testi-author">
+          <div class="testi-avatar">ع.ک</div>
+          <div><div class="testi-name">علی کریمی</div><div class="testi-role">سازنده</div><div class="testi-stars">★★★★★</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- کارت‌های تماس -->
-<section class="contact-section" id="contact">
-<div class="container">
-<div class="section-title">
-<h2>تماس مستقیم با ما</h2>
-<p>برای دریافت خدمات و مشاوره رایگان، مستقیم با اعضای تیم ما در تماس باشید</p>
-</div>
-<div class="contact-grid">
-<div class="contact-card">
-<div class="contact-icon">
-<i class="fas fa-user-tie"></i>
-</div>
-<div class="contact-name">علی قادری</div>
-<a href="tel:09152000370" class="contact-phone">
-<i class="fas fa-phone-alt"></i> 09152000370
-</a>
-</div>
-<div class="contact-card">
-<div class="contact-icon">
-<i class="fas fa-user"></i>
-</div>
-<div class="contact-name">رضا قادری</div>
-<a href="tel:09158000973" class="contact-phone">
-<i class="fas fa-phone-alt"></i> 09158000973
-</a>
-</div>
-<div class="contact-card">
-<div class="contact-icon">
-<i class="fas fa-user"></i>
-</div>
-<div class="contact-name">عباس قادری</div>
-<a href="tel:09152000390" class="contact-phone">
-<i class="fas fa-phone-alt"></i> 09152000390
-</a>
-</div>
-<div class="contact-card">
-<div class="contact-icon">
-<i class="fas fa-user"></i>
-</div>
-<div class="contact-name">مهدی قادری</div>
-<a href="tel:09152200540" class="contact-phone">
-<i class="fas fa-phone-alt"></i> 09152200540
-</a>
-</div>
-</div>
-<div class="guarantee">
-<h3><i class="fas fa-check-circle"></i> ضمانت کیفیت خدمات</h3>
-<p>در صورت عدم رضایت از خدمات، تعهد به اصلاح و جبران خسارت داریم. 15 سال سابقه ما گواه کیفیت ماست.</p>
-</div>
-</div>
+
+<section class="section section--mid" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>تماس مستقیم</h2>
+      <p>بدون واسطه، با خود تیم.</p>
+    </div>
+    <div class="contact-list reveal">
+      <a href="tel:+989152000370" class="contact-row">
+        <span class="contact-row-icon"><svg class="icon"><use href="#i-user"/></svg></span>
+        <span class="contact-row-name">علی قادری</span>
+        <span class="contact-row-phone">۰۹۱۵۲۰۰۰۳۷۰</span>
+        <span class="contact-row-action"><svg class="icon"><use href="#i-phone"/></svg> تماس</span>
+      </a>
+      <a href="tel:+989158000973" class="contact-row">
+        <span class="contact-row-icon"><svg class="icon"><use href="#i-user"/></svg></span>
+        <span class="contact-row-name">رضا قادری</span>
+        <span class="contact-row-phone">۰۹۱۵۸۰۰۰۹۷۳</span>
+        <span class="contact-row-action"><svg class="icon"><use href="#i-phone"/></svg> تماس</span>
+      </a>
+      <a href="tel:+989152000390" class="contact-row">
+        <span class="contact-row-icon"><svg class="icon"><use href="#i-user"/></svg></span>
+        <span class="contact-row-name">عباس قادری</span>
+        <span class="contact-row-phone">۰۹۱۵۲۰۰۰۳۹۰</span>
+        <span class="contact-row-action"><svg class="icon"><use href="#i-phone"/></svg> تماس</span>
+      </a>
+      <a href="tel:+989152200540" class="contact-row">
+        <span class="contact-row-icon"><svg class="icon"><use href="#i-user"/></svg></span>
+        <span class="contact-row-name">مهدی قادری</span>
+        <span class="contact-row-phone">۰۹۱۵۲۲۰۰۵۴۰</span>
+        <span class="contact-row-action"><svg class="icon"><use href="#i-phone"/></svg> تماس</span>
+      </a>
+    </div>
+    <div class="contact-foot">
+      <div class="contact-foot-item">
+        <svg class="icon"><use href="#i-wallet"/></svg>
+        <span>هزینهٔ حمل فقط <strong>با تماس تلفنی</strong> اعلام می‌شود</span>
+      </div>
+      <div class="contact-foot-item">
+        <svg class="icon"><use href="#i-clock"/></svg>
+        <span><strong>۷ صبح تا ۵ بعد از ظهر</strong> — شنبه تا جمعه</span>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- فوتر -->
-<footer id="footer">
-<div class="container">
-<div class="footer-content">
-<div class="footer-section">
-<h4>درباره ما</h4>
-<p>با ۱۵ سال سابقه درخشان در حوزه حمل خاک و نخاله ساختمانی، مفتخریم با تیمی متخصص و تجهیزات مدرن، خدمت‌رسان پروژه‌های ساختمانی در سراسر مشهد باشیم.</p>
-<div class="footer-links">
-<a href="#" class="footer-link"><i class="fas fa-award"></i> گواهی‌نامه‌ها</a>
-<a href="#" class="footer-link"><i class="fas fa-project-diagram"></i> پروژه‌های انجام شده</a>
-<a href="#" class="footer-link"><i class="fas fa-medal"></i> افتخارات</a>
-</div>
-</div>
-<div class="footer-section">
-<h4>خدمات ما</h4>
-<div class="footer-links">
-<a href="#" class="footer-link"><i class="fas fa-check-circle"></i> حمل خاک و نخاله</a>
-<a href="#" class="footer-link"><i class="fas fa-check-circle"></i> خاکبرداری مکانیزه</a>
-<a href="#" class="footer-link"><i class="fas fa-check-circle"></i> خدمات کارگری تخصصی</a>
-<a href="#" class="footer-link"><i class="fas fa-check-circle"></i> مشاوره رایگان</a>
-<a href="#" class="footer-link"><i class="fas fa-check-circle"></i> پشتیبانی ۲۴ ساعته</a>
-</div>
-</div>
-<div class="footer-section">
-<h4>شماره‌های تماس</h4>
-<div class="footer-phones">
-<a href="tel:09152000370" class="footer-phone">علی: 09152000370</a>
-<a href="tel:09158000973" class="footer-phone">رضا: 09158000973</a>
-<a href="tel:09152000390" class="footer-phone">عباس: 09152000390</a>
-<a href="tel:09152200540" class="footer-phone">مهدی: 09152200540</a>
-</div>
-<p style="margin-top: 20px; color: #cbd5e0;">
-<i class="fas fa-clock"></i> خدمات ۲۴ ساعته در تمام روزهای هفته
-</p>
-</div>
-<div class="footer-section">
-<h4>عضویت در خبرنامه</h4>
-<p>برای دریافت جدیدترین تخفیف‌ها و اطلاع از خدمات ویژه، در خبرنامه ما عضو شوید.</p>
-<div class="footer-newsletter">
-<input type="email" class="newsletter-input" placeholder="آدرس ایمیل شما">
-<button class="newsletter-btn">عضویت در خبرنامه</button>
-</div>
-</div>
-</div>
-<div class="copyright">
-<p>© ۱۴۰۳ - تمامی حقوق برای باکس حمل خاک نخاله قادری محفوظ است. | طراحی و توسعه: تیم فنی محمد جواد قادری</p>
-<p>پوشش کامل: منطقه ۳ و ۴ مشهد و تمام خیابان‌های ذکر شده</p>
-<p>تعداد بازدید: <span class="visit-count">۱,۲۵۴</span></p>
-</div>
-</div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>باکس قادری</h4>
+        <p>۱۵ سال حمل خاک و نخاله در مشهد. تیم متخصص، تجهیزات آماده، پاسخ‌گویی روزانه.</p>
+      </div>
+      <div>
+        <h4>دسترسی</h4>
+        <a href="#services"><svg class="icon"><use href="#i-check"/></svg> خدمات</a>
+        <a href="#gallery"><svg class="icon"><use href="#i-check"/></svg> گالری</a>
+        <a href="#areas"><svg class="icon"><use href="#i-check"/></svg> مناطق</a>
+        <a href="#faq"><svg class="icon"><use href="#i-check"/></svg> سوالات</a>
+      </div>
+      <div>
+        <h4>شماره‌ها</h4>
+        <div class="footer-phones">
+          <a href="tel:+989152000370">علی</a>
+          <a href="tel:+989158000973">رضا</a>
+          <a href="tel:+989152000390">عباس</a>
+          <a href="tel:+989152200540">مهدی</a>
+        </div>
+        <p style="margin-top:12px;display:flex;align-items:center;gap:8px">
+          <svg class="icon"><use href="#i-clock"/></svg> ۷ صبح تا ۵ بعد از ظهر
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> باکس حمل خاک نخاله قادری — مشهد</p>
+      <p class="footer-note">منطقه ۳ و ۴ · بدون واسطه · تماس مستقیم</p>
+    </div>
+  </div>
 </footer>
-<!-- دکمه شناور (FAB) با منوی پیشرفته -->
-<div class="fab-container">
-<div class="fab-main" id="fabMain">
-<i class="fas fa-phone-alt"></i>
+
+<div class="dock-wrap" id="dockWrap">
+  <nav class="dock" aria-label="ناوبری پایین">
+    <a href="#home" class="dock-item active" data-nav="home"><svg class="icon"><use href="#i-home"/></svg><span>خانه</span></a>
+    <a href="#services" class="dock-item" data-nav="services"><svg class="icon"><use href="#i-services"/></svg><span>خدمات</span></a>
+    <button class="dock-center" id="dockCenter" aria-label="تماس سریع" aria-expanded="false" aria-controls="sheet">
+      <svg class="icon"><use href="#i-phone"/></svg>
+    </button>
+    <a href="#gallery" class="dock-item" data-nav="gallery"><svg class="icon"><use href="#i-images"/></svg><span>گالری</span></a>
+    <a href="#contact" class="dock-item" data-nav="contact"><svg class="icon"><use href="#i-message"/></svg><span>تماس</span></a>
+  </nav>
 </div>
-<div class="fab-menu" id="fabMenu">
-<h4>تماس مستقیم با تیم ما</h4>
-<a href="tel:09152000370" class="fab-contact-item">
-<div class="fab-contact-icon">
-<i class="fas fa-phone-alt"></i>
+
+<div class="sheet-backdrop" id="sheetBackdrop"></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+  <div class="sheet-handle"></div>
+  <button class="sheet-close" id="sheetClose" aria-label="بستن"><svg class="icon"><use href="#i-x"/></svg></button>
+  <h3 id="sheetTitle">تماس و اشتراک</h3>
+  <div class="sheet-actions">
+    <a href="tel:+989152000370" class="sheet-action">
+      <div class="icon-box"><svg class="icon"><use href="#i-phone"/></svg></div>
+      <div>تماس با علی قادری<small>۰۹۱۵۲۰۰۰۳۷۰</small></div>
+    </a>
+    <a href="tel:+989158000973" class="sheet-action">
+      <div class="icon-box"><svg class="icon"><use href="#i-phone"/></svg></div>
+      <div>تماس با رضا قادری<small>۰۹۱۵۸۰۰۰۹۷۳</small></div>
+    </a>
+    <a href="tel:+989152000390" class="sheet-action">
+      <div class="icon-box"><svg class="icon"><use href="#i-phone"/></svg></div>
+      <div>تماس با عباس قادری<small>۰۹۱۵۲۰۰۰۳۹۰</small></div>
+    </a>
+    <a href="tel:+989152200540" class="sheet-action">
+      <div class="icon-box"><svg class="icon"><use href="#i-phone"/></svg></div>
+      <div>تماس با مهدی قادری<small>۰۹۱۵۲۲۰۰۵۴۰</small></div>
+    </a>
+    <button class="sheet-action" id="shareNative">
+      <div class="icon-box"><svg class="icon"><use href="#i-share"/></svg></div>
+      <div>اشتراک‌گذاری صفحه<small>ارسال به دوستان</small></div>
+    </button>
+    <button class="sheet-action" id="copyLink">
+      <div class="icon-box"><svg class="icon"><use href="#i-copy"/></svg></div>
+      <div>کپی لینک<small>برای ارسال در پیام‌رسان</small></div>
+    </button>
+  </div>
 </div>
-<div class="fab-contact-info">
-<h5>علی قادری</h5>
-<p>09152000370</p>
-</div>
-</a>
-<a href="tel:09158000973" class="fab-contact-item">
-<div class="fab-contact-icon">
-<i class="fas fa-phone-alt"></i>
-</div>
-<div class="fab-contact-info">
-<h5>رضا قادری</h5>
-<p>09158000973</p>
-</div>
-</a>
-<a href="tel:09152000390" class="fab-contact-item">
-<div class="fab-contact-icon">
-<i class="fas fa-phone-alt"></i>
-</div>
-<div class="fab-contact-info">
-<h5>عباس قادری</h5>
-<p>09152000390</p>
-</div>
-</a>
-<a href="tel:09152200540" class="fab-contact-item">
-<div class="fab-contact-icon">
-<i class="fas fa-phone-alt"></i>
-</div>
-<div class="fab-contact-info">
-<h5>مهدی قادری</h5>
-<p>09152200540</p>
-</div>
-</a>
-<div class="fab-share">
-<p style="width: 100%; text-align: center; margin-bottom: 10px; color: var(--gray-medium); font-size: 0.9rem;">اشتراک‌گذاری سایت:</p>
-<a href="https://t.me/share/url?url=باکس-حمل-خاک-نخاله-قادری&text=خدمات حرفه‌ای حمل خاک و نخاله در مشهد" class="share-btn share-telegram" target="_blank">
-<i class="fab fa-telegram"></i>
-</a>
-<a href="https://api.whatsapp.com/send?text=خدمات حرفه‌ای حمل خاک و نخاله در مشهد - باکس قادری" class="share-btn share-whatsapp" target="_blank">
-<i class="fab fa-whatsapp"></i>
-</a>
-<a href="#" class="share-btn share-copy" id="copyLink">
-<i class="fas fa-copy"></i>
-</a>
-</div>
-</div>
-</div>
-<!-- نوار ناوبری پایین صفحه -->
-<nav class="bottom-nav">
-<a href="#home" class="bottom-nav-item active">
-<i class="fas fa-home"></i>
-<span>خانه</span>
-</a>
-<a href="#services" class="bottom-nav-item">
-<i class="fas fa-concierge-bell"></i>
-<span>خدمات</span>
-</a>
-<a href="#gallery" class="bottom-nav-item">
-<i class="fas fa-images"></i>
-<span>گالری</span>
-</a>
-<a href="#pricing" class="bottom-nav-item">
-<i class="fas fa-tags"></i>
-<span>قیمت</span>
-</a>
-<a href="#faq" class="bottom-nav-item">
-<i class="fas fa-question-circle"></i>
-<span>سوالات</span>
-</a>
-<a href="#areas" class="bottom-nav-item">
-<i class="fas fa-map-marker-alt"></i>
-<span>مناطق</span>
-</a>
-<a href="#contact" class="bottom-nav-item">
-<i class="fas fa-phone-alt"></i>
-<span>تماس</span>
-</a>
-<a href="#share" class="bottom-nav-item share-btn">
-<i class="fas fa-share-alt"></i>
-<span>اشتراک</span>
-</a>
-</nav>
-<!-- اسکریپت‌های سایت -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "باکس حمل خاک نخاله قادری",
+  "description": "حمل خاک و نخاله ساختمانی، خاکبرداری مکانیزه و خدمات کارگری در منطقه ۳ و ۴ مشهد.",
+  "url": "https://mohammabjavadghadery-design.github.io/Baks/",
+  "telephone": "+989152000370",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "مشهد",
+    "addressRegion": "خراسان رضوی",
+    "addressCountry": "IR"
+  },
+  "areaServed": [
+    {"@type": "AdministrativeArea", "name": "منطقه ۳ مشهد"},
+    {"@type": "AdministrativeArea", "name": "منطقه ۴ مشهد"}
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "07:00",
+    "closes": "17:00"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "خدمات",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "حمل خاک و نخاله"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "خاکبرداری مکانیزه"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "خدمات کارگری ساختمانی"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "پشتیبانی تلفنی"}}
+    ]
+  }
+}
+</script>
+
 <script>
-// حذف لودر پس از بارگذاری
-window.addEventListener('load', function() {
-setTimeout(function() {
-document.getElementById('loader').classList.add('hidden');
-}, 1000);
-});
-// کنترل منوی FAB
-const fabMain = document.getElementById('fabMain');
-const fabMenu = document.getElementById('fabMenu');
-fabMain.addEventListener('click', function() {
-fabMenu.classList.toggle('active');
-});
-// بستن منو با کلیک خارج از آن
-document.addEventListener('click', function(event) {
-if (!fabMain.contains(event.target) && !fabMenu.contains(event.target)) {
-fabMenu.classList.remove('active');
-}
-});
-// کپی کردن لینک سایت
-document.getElementById('copyLink').addEventListener('click', function(e) {
-e.preventDefault();
-const tempInput = document.createElement('input');
-tempInput.value = window.location.href;
-document.body.appendChild(tempInput);
-tempInput.select();
-document.execCommand('copy');
-document.body.removeChild(tempInput);
-// نمایش پیام
-const originalIcon = this.innerHTML;
-this.innerHTML = '<i class="fas fa-check"></i>';
-this.style.background = '#28a745';
-setTimeout(() => {
-this.innerHTML = originalIcon;
-this.style.background = '';
-}, 2000);
-});
-// کنترل تب‌های مناطق
-document.querySelectorAll('.area-tab').forEach(tab => {
-tab.addEventListener('click', function() {
-document.querySelectorAll('.area-tab').forEach(t => t.classList.remove('active'));
-this.classList.add('active');
-const district = this.getAttribute('data-district');
-document.querySelectorAll('.area-district').forEach(d => {
-if (district === 'all') {
-d.style.display = 'block';
-} else {
-d.style.display = d.getAttribute('data-district') === district ? 'block' : 'none';
-}
-});
-});
-});
-// اسکرول نرم به بخش‌ها
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-anchor.addEventListener('click', function(e) {
-e.preventDefault();
-const targetId = this.getAttribute('href');
-if (targetId === '#') return;
-const targetElement = document.querySelector(targetId);
-if (targetElement) {
-window.scrollTo({
-top: targetElement.offsetTop - 80,
-behavior: 'smooth'
-});
-// بستن منوی FAB
-fabMenu.classList.remove('active');
-// به‌روزرسانی ناوبری پایین
-document.querySelectorAll('.bottom-nav-item').forEach(item => {
-item.classList.remove('active');
-});
-this.classList.add('active');
-}
-});
-});
-// تغییر استایل هدر هنگام اسکرول
-window.addEventListener('scroll', function() {
-const header = document.querySelector('header');
-if (window.scrollY > 100) {
-header.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.1)';
-header.style.background = 'rgba(255, 255, 255, 0.98)';
-} else {
-header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.08)';
-header.style.background = 'rgba(255, 255, 255, 0.98)';
-}
-});
-// فعال‌سازی آیتم‌های ناوبری پایین هنگام اسکرول
-const sections = document.querySelectorAll('section[id], footer[id]');
-const navItems = document.querySelectorAll('.bottom-nav-item');
-function activateNavItem() {
-let current = '';
-sections.forEach(section => {
-const sectionTop = section.offsetTop - 150;
-const sectionHeight = section.clientHeight;
-if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-current = section.getAttribute('id');
-}
-});
-navItems.forEach(item => {
-item.classList.remove('active');
-if (item.getAttribute('href').substring(1) === current) {
-item.classList.add('active');
-}
-});
-}
-window.addEventListener('scroll', activateNavItem);
-// کاروسل گالری
-const galleryScroll = document.getElementById('galleryScroll');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-const dots = document.querySelectorAll('.dot');
-let currentIndex = 0;
+(function(){
+  'use strict';
 
-// حرکت به چپ
-nextBtn.addEventListener('click', () => {
-currentIndex = Math.min(currentIndex + 1, dots.length - 1);
-const itemWidth = galleryScroll.querySelector('.gallery-item').offsetWidth + 25;
-galleryScroll.scrollTo({
-left: currentIndex * itemWidth,
-behavior: 'smooth'
-});
-updateDots();
-});
+  /* ===== LOADER (anti-flicker only, no forced hold) ===== */
+  var loader = document.getElementById('loader');
+  var started = Date.now();
+  var MIN_VISIBLE = 600;
+  function hideLoader(){
+    var wait = Math.max(0, MIN_VISIBLE - (Date.now() - started));
+    setTimeout(function(){ loader.classList.add('is-done'); }, wait);
+  }
+  if (document.readyState === 'complete') hideLoader();
+  else window.addEventListener('load', hideLoader, {once:true});
+  setTimeout(function(){ loader.classList.add('is-done'); }, 5000);
 
-// حرکت به راست
-prevBtn.addEventListener('click', () => {
-currentIndex = Math.max(currentIndex - 1, 0);
-const itemWidth = galleryScroll.querySelector('.gallery-item').offsetWidth + 25;
-galleryScroll.scrollTo({
-left: currentIndex * itemWidth,
-behavior: 'smooth'
-});
-updateDots();
-});
+  /* ===== HEADER SCROLL ===== */
+  var headerBar = document.getElementById('headerBar');
+  var scrolled = false;
+  window.addEventListener('scroll', function(){
+    var s = window.scrollY > 12;
+    if (s !== scrolled){ headerBar.classList.toggle('scrolled', s); scrolled = s; }
+  }, {passive:true});
 
-// کلیک روی دات‌ها
-dots.forEach((dot, index) => {
-dot.addEventListener('click', () => {
-currentIndex = index;
-const itemWidth = galleryScroll.querySelector('.gallery-item').offsetWidth + 25;
-galleryScroll.scrollTo({
-left: currentIndex * itemWidth,
-behavior: 'smooth'
-});
-updateDots();
-});
-});
+  /* ===== NUMBER COUNTER (2400ms easeOutQuart) ===== */
+  function animateCount(el){
+    var target = parseInt(el.getAttribute('data-count'), 10);
+    if (!target || el.dataset.done) return;
+    el.dataset.done = '1';
+    var start = null, dur = 2400;
+    function step(ts){
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 4);
+      el.textContent = Math.round(target * eased).toLocaleString('fa-IR');
+      if (p < 1) requestAnimationFrame(step);
+      else el.textContent = target.toLocaleString('fa-IR');
+    }
+    requestAnimationFrame(step);
+  }
+  var statIO = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ animateCount(e.target); statIO.unobserve(e.target); }
+    });
+  }, {threshold:0.5});
+  document.querySelectorAll('.stat-num').forEach(function(el){ statIO.observe(el); });
 
-function updateDots() {
-dots.forEach((dot, index) => {
-dot.classList.toggle('active', index === currentIndex);
-});
-}
+  /* ===== TAGLINE WORD REVEAL (starts when reaching middle of viewport) ===== */
+  var tag = document.getElementById('taglineText');
+  if (tag){
+    var words = tag.textContent.trim().split(/\s+/);
+    tag.innerHTML = words.map(function(w){ return '<span class="w">' + w + '</span>'; }).join(' ');
+    var spans = tag.querySelectorAll('.w');
+    var tagIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return;
+        spans.forEach(function(s, i){
+          setTimeout(function(){ s.classList.add('on'); }, i * 70);
+        });
+        tagIO.disconnect();
+      });
+    }, {threshold:0.5, rootMargin:'0px 0px -20% 0px'});
+    tagIO.observe(tag);
+  }
 
-// FAQ Accordion
-document.querySelectorAll('.faq-question').forEach(question => {
-question.addEventListener('click', () => {
-const answer = question.nextElementSibling;
-const isOpen = answer.classList.contains('open');
-// بستن همه پاسخ‌ها
-document.querySelectorAll('.faq-answer').forEach(item => {
-item.classList.remove('open');
-});
-// بستن همه آیکون‌ها
-document.querySelectorAll('.faq-question i').forEach(icon => {
-icon.style.transform = 'rotate(0deg)';
-});
-// باز کردن مورد انتخاب شده
-if (!isOpen) {
-answer.classList.add('open');
-question.querySelector('i').style.transform = 'rotate(180deg)';
-}
-});
-});
-// دکمه اشتراک در نوار پایین
-document.querySelector('.bottom-nav .share-btn').addEventListener('click', function(e) {
-e.preventDefault();
-// باز کردن منوی اشتراک FAB
-fabMenu.classList.add('active');
-});
-// فرم عضویت در خبرنامه
-document.querySelector('.newsletter-btn').addEventListener('click', function() {
-const emailInput = document.querySelector('.newsletter-input');
-const email = emailInput.value;
-if (email && email.includes('@')) {
-this.innerHTML = '<i class="fas fa-check"></i> عضو شدید!';
-this.style.background = '#28a745';
-emailInput.value = '';
-setTimeout(() => {
-this.innerHTML = 'عضویت در خبرنامه';
-this.style.background = '';
-}, 3000);
-} else {
-emailInput.style.borderColor = '#ff4757';
-setTimeout(() => {
-emailInput.style.borderColor = '';
-}, 2000);
-}
-});
-// افزایش شمارنده بازدید
-window.addEventListener('load', function() {
-const visitCountElement = document.querySelector('.visit-count');
-let count = parseInt(visitCountElement.textContent.replace(/,/g, ''));
-// افزایش تصادفی برای نمایش
-count += Math.floor(Math.random() * 10);
-visitCountElement.textContent = count.toLocaleString('fa-IR');
-});
+  /* ===== REVEAL ===== */
+  var revealIO = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add('visible'); revealIO.unobserve(e.target); }
+    });
+  }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){ revealIO.observe(el); });
+
+  /* ===== GALLERY (clamp + disabled at boundaries) ===== */
+  var gScroll = document.getElementById('galleryScroll');
+  var gItems = gScroll.querySelectorAll('.gallery-item');
+  var gPrev = document.getElementById('gPrev');
+  var gNext = document.getElementById('gNext');
+  var gIndex = 0;
+
+  function updateGallery(){
+    gPrev.disabled = gIndex <= 0;
+    gNext.disabled = gIndex >= gItems.length - 1;
+  }
+  function goToGallery(idx){
+    idx = Math.max(0, Math.min(gItems.length - 1, idx));
+    gIndex = idx;
+    gItems[idx].scrollIntoView({behavior:'smooth', block:'nearest', inline:'center'});
+    updateGallery();
+  }
+  gNext.addEventListener('click', function(){ goToGallery(gIndex + 1); });
+  gPrev.addEventListener('click', function(){ goToGallery(gIndex - 1); });
+  gScroll.addEventListener('keydown', function(e){
+    if (e.key === 'ArrowRight') { e.preventDefault(); goToGallery(gIndex - 1); }
+    else if (e.key === 'ArrowLeft') { e.preventDefault(); goToGallery(gIndex + 1); }
+  });
+  updateGallery();
+
+  /* ===== FAQ ===== */
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      document.querySelectorAll('.faq-q').forEach(function(b){
+        b.setAttribute('aria-expanded','false');
+        document.getElementById(b.getAttribute('aria-controls')).classList.remove('open');
+      });
+      if (!open){
+        btn.setAttribute('aria-expanded','true');
+        document.getElementById(btn.getAttribute('aria-controls')).classList.add('open');
+      }
+    });
+  });
+
+  /* ===== AREA TABS (smooth scroll to active) ===== */
+  var tabs = document.querySelectorAll('.tab');
+  var districts = document.querySelectorAll('.district');
+  function filter(d){
+    tabs.forEach(function(t){
+      var on = t.getAttribute('data-d') === d;
+      t.classList.toggle('active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    districts.forEach(function(c){
+      c.style.display = (d === 'all' || c.getAttribute('data-d') === d) ? '' : 'none';
+    });
+  }
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){
+      filter(t.getAttribute('data-d'));
+      t.scrollIntoView({behavior:'smooth', inline:'center', block:'nearest'});
+    });
+  });
+
+  /* ===== DOCK ACTIVE ===== */
+  var dockItems = document.querySelectorAll('.dock-item[data-nav]');
+  var navIO = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (!e.isIntersecting) return;
+      var id = e.target.getAttribute('id');
+      dockItems.forEach(function(it){
+        it.classList.toggle('active', it.getAttribute('data-nav') === id);
+      });
+    });
+  }, {rootMargin:'-45% 0px -45% 0px'});
+  document.querySelectorAll('section[id]').forEach(function(s){ navIO.observe(s); });
+
+  /* ===== SMOOTH SCROLL ===== */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href').slice(1);
+      if (!id) return;
+      var el = document.getElementById(id);
+      if (!el) return;
+      e.preventDefault();
+      var top = el.getBoundingClientRect().top + window.scrollY - 90;
+      window.scrollTo({top:top, behavior:'smooth'});
+    });
+  });
+
+  /* ===== SHEET ===== */
+  var sheet = document.getElementById('sheet');
+  var backdrop = document.getElementById('sheetBackdrop');
+  var center = document.getElementById('dockCenter');
+  function openSheet(){
+    sheet.classList.add('open');
+    backdrop.classList.add('open');
+    center.setAttribute('aria-expanded','true');
+    var first = sheet.querySelector('.sheet-action');
+    if (first) setTimeout(function(){ first.focus(); }, 300);
+  }
+  function closeSheet(){
+    sheet.classList.remove('open');
+    backdrop.classList.remove('open');
+    center.setAttribute('aria-expanded','false');
+    center.focus();
+  }
+  center.addEventListener('click', openSheet);
+  document.getElementById('sheetClose').addEventListener('click', closeSheet);
+  backdrop.addEventListener('click', closeSheet);
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && sheet.classList.contains('open')) closeSheet();
+  });
+
+  /* ===== SHARE / COPY ===== */
+  var pageUrl = window.location.href;
+  var shareData = { title:'باکس حمل خاک و نخاله قادری', text:'حمل خاک و نخاله در منطقه ۳ و ۴ مشهد.', url:pageUrl };
+  document.getElementById('shareNative').addEventListener('click', function(){
+    if (navigator.share) navigator.share(shareData).catch(function(){});
+    else copyText(pageUrl);
+  });
+  document.getElementById('copyLink').addEventListener('click', function(){
+    copyText(pageUrl);
+    var btn = this;
+    var original = btn.innerHTML;
+    btn.innerHTML = '<div class="icon-box"><svg class="icon"><use href="#i-check"/></svg></div><div>کپی شد<small>لینک در حافظه است</small></div>';
+    setTimeout(function(){ btn.innerHTML = original; }, 1600);
+  });
+  function copyText(text){
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).catch(function(){});
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); } catch(e){}
+      document.body.removeChild(ta);
+    }
+  }
+
+  /* ===== YEAR ===== */
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
 </script>
 </body>
 </html>
