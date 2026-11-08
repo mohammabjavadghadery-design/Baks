@@ -1,1 +1,2491 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>باکس حمل خاک نخاله قادری | منطقه ۳ و ۴ مشهد</title>
+<meta name="description" content="حمل خاک و نخاله ساختمانی، خاکبرداری مکانیزه و خدمات کارگری در منطقه ۳ و ۴ مشهد. ۱۵ سال سابقه، ۵۰ باکس آماده، تماس مستقیم.">
+<meta name="theme-color" content="#F5F0E8">
+<link rel="canonical" href="https://mohammabjavadghadery-design.github.io/Baks/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="باکس حمل خاک و نخاله قادری — مشهد">
+<meta property="og:description" content="حمل خاک و نخاله، خاکبرداری مکانیزه و خدمات کارگری در منطقه ۳ و ۴ مشهد.">
+<meta property="og:url" content="https://mohammabjavadghadery-design.github.io/Baks/">
+<meta property="og:image" content="https://mohammabjavadghadery-design.github.io/Baks/images/truck-main.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23FF6B00'/><path d='M25 60h50v-8a6 6 0 0 0-6-6H44l-6-10H31a6 6 0 0 0-6 6v18z M32 68a5 5 0 1 0 0-10 5 5 0 0 0 0 10z M68 68a5 5 0 1 0 0-10 5 5 0 0 0 0 10z' fill='%231A1512'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ==========================================================
+   DESIGN TOKENS
+   ========================================================== */
+:root{
+  --bg-cream: #F5F0E8;
+  --bg-cream-mid: #EFE7DA;
+  --bg-cream-soft: #FAF6EF;
+  --bg-card: #FFFFFF;
+  --bg-dark: #1A1512;
+  --bg-dark-2: #241C17;
 
+  --ink: #1A1512;
+  --ink-soft: #5C4F45;
+  --ink-mute: #7A6B5E;
+  --ink-on-dark: #F5F0E8;
+  --ink-on-dark-soft: #C7BDB0;
+
+  --accent: #FF6B00;
+  --accent-hover: #E55F00;
+  --accent-soft: #FFF0E0;
+  --accent-glow: rgba(255,107,0,0.22);
+
+  --line: rgba(26,21,18,0.09);
+  --line-soft: rgba(26,21,18,0.05);
+  --line-firm: rgba(26,21,18,0.14);
+  --line-dark: rgba(245,240,232,0.10);
+
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --r-xl: 24px;
+  --r-pill: 999px;
+
+  --s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:32px;
+  --s7:40px;--s8:48px;--s9:64px;--s10:80px;--s11:96px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-slow: 500ms;
+  --dur-fast: 300ms;
+
+  --shadow-1: 0 1px 2px rgba(26,21,18,0.04), 0 2px 6px rgba(26,21,18,0.04);
+  --shadow-2: 0 1px 2px rgba(26,21,18,0.05), 0 4px 12px rgba(26,21,18,0.06), 0 12px 28px rgba(26,21,18,0.05);
+  --shadow-3: 0 2px 4px rgba(26,21,18,0.06), 0 8px 20px rgba(26,21,18,0.08), 0 20px 48px rgba(26,21,18,0.08);
+
+  --font: 'Vazirmatn', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --focus: 0 0 0 3px rgba(255,107,0,0.5);
+}
+
+/* ==========================================================
+   RESET
+   ========================================================== */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:auto;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--font);
+  font-size:16px;
+  line-height:1.7;
+  color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-user-select:none;
+  user-select:none;
+  overflow-x:hidden;
+
+  --stage-bg: var(--bg-cream);
+  background-color: var(--stage-bg);
+  transition: background-color 800ms var(--ease);
+  min-height:100vh;
+}
+body[data-stage="hero"]         { --stage-bg: #F5F0E8; }
+body[data-stage="tagline"]      { --stage-bg: #EFE7DA; }
+body[data-stage="services"]     { --stage-bg: #FAF6EF; }
+body[data-stage="gallery"]      { --stage-bg: #F5F0E8; }
+body[data-stage="areas"]        { --stage-bg: #FAF6EF; }
+body[data-stage="faq"]          { --stage-bg: #EFE7DA; }
+body[data-stage="testimonials"] { --stage-bg: #F5F0E8; }
+body[data-stage="contact"]      { --stage-bg: #FAF6EF; }
+
+/* Grid overlay */
+body::after{
+  content:'';
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+  background-image:
+    linear-gradient(rgba(26,21,18,0.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26,21,18,0.028) 1px, transparent 1px);
+  background-size:64px 64px;
+  mask-image: radial-gradient(ellipse 90% 80% at 50% 50%, black 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 90% 80% at 50% 50%, black 40%, transparent 100%);
+}
+
+/* Noise grain */
+body::before{
+  content:'';
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:9998;
+  opacity:0.032;
+  mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+img{display:block;max-width:100%;height:auto}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:none;box-shadow:var(--focus);border-radius:var(--r-sm)}
+::selection{background:var(--accent);color:#FFF}
+
+.copyable,.contact-phone,.faq-a p,.testi-text,.footer-phones a{-webkit-user-select:text;user-select:text}
+
+.wrap{width:100%;max-width:1240px;margin:0 auto;padding:0 var(--s5)}
+@media(max-width:600px){.wrap{padding:0 var(--s4)}}
+
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+
+.skip-link{
+  position:absolute;top:-140px;inset-inline-start:var(--s4);
+  background:var(--accent);color:#FFF;
+  padding:var(--s2) var(--s4);
+  border-radius:var(--r-sm);
+  font-weight:700;font-size:14px;
+  z-index:10001;
+  transition:top var(--dur-fast) var(--ease);
+}
+.skip-link:focus{top:var(--s4)}
+
+.icon{
+  width:1em;height:1em;fill:none;stroke:currentColor;
+  stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
+  flex-shrink:0;vertical-align:middle;
+}
+
+/* ==========================================================
+   LOADER
+   ========================================================== */
+.loader{
+  position:fixed;inset:0;z-index:9999;
+  background:var(--bg-dark);
+  display:flex;align-items:center;justify-content:center;
+  transition:opacity 400ms var(--ease),visibility 400ms var(--ease);
+}
+.loader.is-done{opacity:0;visibility:hidden;pointer-events:none}
+.loader-inner{text-align:center;width:200px}
+.loader-mark{
+  width:64px;height:64px;
+  background:var(--accent);
+  border-radius:var(--r-lg);
+  display:grid;place-items:center;
+  margin:0 auto var(--s4);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.3), 0 8px 24px rgba(255,107,0,0.3);
+}
+.loader-mark svg{width:32px;height:32px;stroke:#FFF;fill:none;stroke-width:2.4}
+.loader-title{font-size:18px;font-weight:700;color:var(--ink-on-dark);margin-bottom:var(--s4)}
+.loader-track{
+  width:100%;height:3px;
+  background:rgba(245,240,232,0.12);
+  border-radius:2px;overflow:hidden;
+  margin-bottom:var(--s2);
+}
+.loader-fill{
+  height:100%;width:0;
+  background:var(--accent);
+  border-radius:2px;
+  transition:width 200ms linear;
+}
+.loader-pct{
+  font-size:12px;font-weight:500;
+  color:rgba(245,240,232,0.5);
+  font-variant-numeric:tabular-nums;
+  letter-spacing:0.05em;
+}
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+.site-header{
+  position:fixed;top:0;inset-inline:0;z-index:1000;
+  background:transparent;
+  border-bottom:1px solid transparent;
+  transition:
+    background-color var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease),
+    box-shadow var(--dur-fast) var(--ease);
+}
+.site-header.is-scrolled{
+  background:linear-gradient(135deg, rgba(255,255,255,0.55), rgba(245,240,232,0.42));
+  backdrop-filter:blur(16px) saturate(180%);
+  -webkit-backdrop-filter:blur(16px) saturate(180%);
+  border-bottom-color:rgba(255,255,255,0.4);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.7),
+    0 8px 32px rgba(26,21,18,0.06);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:var(--s5);
+  padding-block:var(--s3);
+  transition:padding var(--dur-fast) var(--ease);
+}
+.site-header.is-scrolled .header-inner{padding-block:var(--s2)}
+
+.brand{display:flex;align-items:center;gap:var(--s3)}
+.brand-mark{
+  width:40px;height:40px;
+  background:var(--accent);
+  border-radius:var(--r-sm);
+  display:grid;place-items:center;
+  flex-shrink:0;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.3), 0 2px 6px rgba(255,107,0,0.25);
+}
+.brand-mark svg{width:22px;height:22px;stroke:#FFF;fill:none;stroke-width:2.4}
+.brand-text{display:flex;flex-direction:column;line-height:1.2}
+.brand-name{font-size:15px;font-weight:700;color:var(--ink)}
+.brand-sub{font-size:10px;font-weight:500;color:var(--ink-mute);letter-spacing:0.02em}
+
+.main-nav{display:flex;gap:var(--s5)}
+.main-nav a{
+  font-size:14px;font-weight:500;
+  color:var(--ink-soft);
+  padding-block:var(--s1);
+  position:relative;
+  transition:color var(--dur-fast) var(--ease);
+}
+.main-nav a::after{
+  content:'';position:absolute;bottom:0;inset-inline-start:0;
+  width:0;height:2px;
+  background:var(--accent);
+  border-radius:1px;
+  transition:width var(--dur-fast) var(--ease);
+}
+.main-nav a:hover{color:var(--ink)}
+.main-nav a:hover::after{width:100%}
+
+.header-actions{display:flex;align-items:center;gap:var(--s3)}
+.status-chip{
+  display:flex;align-items:center;gap:var(--s2);
+  font-size:11px;font-weight:600;
+  color:var(--ink-soft);
+}
+.status-dot{
+  width:7px;height:7px;border-radius:50%;
+  background:#22C55E;
+  box-shadow:0 0 8px rgba(34,197,94,0.5);
+  animation:pulse 2s infinite;
+}
+@keyframes pulse{
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:0.6;transform:scale(1.15)}
+}
+
+.header-cta{
+  display:inline-flex;align-items:center;gap:var(--s2);
+  background:var(--accent);
+  color:#FFF;
+  padding:var(--s2) var(--s4);
+  border-radius:var(--r-pill);
+  font-size:13px;font-weight:700;
+  box-shadow:0 2px 8px rgba(255,107,0,0.25);
+  transition:transform var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
+  will-change:transform;
+}
+.header-cta:hover{background:var(--accent-hover);box-shadow:0 4px 16px rgba(255,107,0,0.35)}
+.header-cta:active{transform:scale(0.97)}
+.header-cta svg{width:15px;height:15px}
+
+@media(max-width:980px){
+  .main-nav,.status-chip{display:none}
+}
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+.hero{
+  position:relative;
+  min-height:100svh;
+  display:flex;
+  align-items:center;
+  padding:140px 0 var(--s10);
+  z-index:1;
+}
+.hero-inner{width:100%;position:relative}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:var(--s2);
+  border:1px solid var(--accent-glow);
+  background:rgba(255,107,0,0.05);
+  color:var(--accent);
+  padding:var(--s1) var(--s3);
+  border-radius:var(--r-pill);
+  font-size:12px;font-weight:600;
+  margin-bottom:var(--s5);
+  opacity:0;
+  transform:translateY(12px);
+  transition:opacity 600ms var(--ease) 100ms, transform 600ms var(--ease) 100ms;
+}
+.hero.is-ready .hero-badge{opacity:1;transform:translateY(0)}
+.badge-dot{
+  width:6px;height:6px;border-radius:50%;
+  background:var(--accent);
+  animation:pulse 2s infinite;
+}
+
+.hero-title{
+  font-size:clamp(2.8rem, 8vw, 7rem);
+  line-height:0.92;
+  font-weight:900;
+  letter-spacing:0;
+  color:var(--ink);
+  margin-bottom:var(--s5);
+  text-wrap:balance;
+}
+.hero-title .line{
+  display:block;
+  overflow:hidden;
+  padding-block:0.02em;
+}
+.hero-title .line > span{
+  display:inline-block;
+  transform:translateY(105%);
+  transition:transform 900ms var(--ease);
+  transition-delay:calc(var(--i, 0) * 80ms + 200ms);
+}
+.hero.is-ready .hero-title .line > span{transform:translateY(0)}
+.hero-title em{
+  font-style:normal;
+  color:var(--accent);
+}
+.hero-title .line:nth-child(3) > span{padding-inline-start:0.04em}
+
+.hero-lead{
+  font-size:clamp(1rem, 1.6vw, 1.15rem);
+  line-height:1.85;
+  color:var(--ink-soft);
+  max-width:52ch;
+  margin-bottom:var(--s6);
+  text-wrap:pretty;
+  opacity:0;
+  transform:translateY(16px);
+  transition:opacity 700ms var(--ease) 700ms, transform 700ms var(--ease) 700ms;
+}
+.hero.is-ready .hero-lead{opacity:1;transform:translateY(0)}
+
+.hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:var(--s3);
+  margin-bottom:var(--s8);
+  opacity:0;
+  transform:translateY(16px);
+  transition:opacity 700ms var(--ease) 850ms, transform 700ms var(--ease) 850ms;
+}
+.hero.is-ready .hero-actions{opacity:1;transform:translateY(0)}
+
+.btn{
+  display:inline-flex;align-items:center;gap:var(--s2);
+  padding:var(--s3) var(--s6);
+  border-radius:var(--r-pill);
+  font-size:15px;font-weight:700;
+  transition:transform var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+  will-change:transform;
+}
+.btn-primary{
+  background:var(--accent);
+  color:#FFF;
+  box-shadow:0 4px 16px rgba(255,107,0,0.3);
+}
+.btn-primary:hover{background:var(--accent-hover);box-shadow:0 6px 24px rgba(255,107,0,0.4)}
+.btn-primary:active{transform:scale(0.98)}
+.btn-ghost{
+  background:transparent;
+  color:var(--ink);
+  border:1px solid var(--line-firm);
+}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);background:rgba(255,107,0,0.03)}
+.btn svg{width:16px;height:16px}
+
+.hero-proof{
+  display:grid;
+  grid-template-columns:repeat(3, auto);
+  gap:var(--s6);
+  padding-top:var(--s5);
+  border-top:1px solid var(--line);
+  max-width:520px;
+  opacity:0;
+  transform:translateY(16px);
+  transition:opacity 700ms var(--ease) 1000ms, transform 700ms var(--ease) 1000ms;
+}
+.hero.is-ready .hero-proof{opacity:1;transform:translateY(0)}
+.hero-proof > div{display:flex;flex-direction:column}
+.hero-proof strong{
+  font-size:clamp(1.5rem, 3.5vw, 2.25rem);
+  font-weight:800;
+  line-height:1.1;
+  color:var(--ink);
+  font-variant-numeric:tabular-nums;
+}
+.hero-proof span{
+  font-size:11px;
+  font-weight:500;
+  color:var(--ink-mute);
+  letter-spacing:0.04em;
+  margin-top:2px;
+}
+
+@media(max-width:700px){
+  .hero{padding:120px 0 var(--s8);min-height:auto}
+  .hero-actions .btn{flex:1;justify-content:center}
+  .hero-proof{gap:var(--s4)}
+}
+
+/* ==========================================================
+   MARQUEE
+   ========================================================== */
+.marquee{
+  background:var(--bg-cream-mid);
+  border-block:1px solid var(--line-soft);
+  overflow:hidden;
+  padding-block:var(--s4);
+  position:relative;
+  z-index:1;
+}
+.marquee::before,.marquee::after{
+  content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none;
+}
+.marquee::before{
+  inset-inline-start:0;
+  background:linear-gradient(to right, var(--bg-cream-mid), transparent);
+}
+.marquee::after{
+  inset-inline-end:0;
+  background:linear-gradient(to left, var(--bg-cream-mid), transparent);
+}
+.marquee-track{
+  display:flex;
+  gap:var(--s6);
+  white-space:nowrap;
+  width:max-content;
+  animation:marqueeScroll 45s linear infinite;
+  will-change:transform;
+}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-track > span{
+  font-size:13px;
+  font-weight:600;
+  color:var(--ink-soft);
+  letter-spacing:0.02em;
+  display:inline-flex;
+  align-items:center;
+}
+.marquee-track .dot{
+  font-size:8px;
+  color:var(--accent);
+  opacity:0.7;
+}
+@keyframes marqueeScroll{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+
+/* ==========================================================
+   STATS
+   ========================================================== */
+.stats-strip{
+  background:var(--bg-cream-mid);
+  border-bottom:1px solid var(--line);
+  position:relative;
+  z-index:1;
+}
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  max-width:1240px;
+  margin:0 auto;
+}
+.stat{
+  padding:var(--s10) var(--s5);
+  text-align:center;
+  border-inline-start:1px solid var(--line);
+}
+.stat:first-child{border-inline-start:none}
+.stat-num{
+  display:block;
+  font-size:clamp(3rem, 7vw, 7rem);
+  font-weight:900;
+  line-height:0.85;
+  color:var(--accent);
+  font-variant-numeric:tabular-nums;
+  margin-bottom:var(--s3);
+  letter-spacing:0;
+}
+.stat-label{
+  font-size:12px;
+  font-weight:600;
+  color:var(--ink-mute);
+  letter-spacing:0.06em;
+}
+@media(max-width:600px){
+  .stat{padding:var(--s7) var(--s2)}
+  .stat-num{font-size:2.6rem}
+  .stat-label{font-size:10px}
+}
+
+/* ==========================================================
+   TAGLINE
+   ========================================================== */
+.tagline-section{
+  background:var(--bg-cream-mid);
+  border-bottom:1px solid var(--line);
+  padding:var(--s11) 0;
+  position:relative;
+  z-index:1;
+}
+.tagline{
+  font-size:clamp(1.8rem, 5vw, 3.8rem);
+  line-height:1.35;
+  font-weight:700;
+  color:var(--ink);
+  text-wrap:balance;
+  max-width:1000px;
+}
+.tagline .w{
+  display:inline-block;
+  color:var(--ink-mute);
+  transition:color 500ms var(--ease);
+  padding-inline:0.03em;
+}
+.tagline .w.on{color:var(--ink)}
+.tagline .w.hl.on{
+  color:var(--ink);
+  background:linear-gradient(transparent 62%, var(--accent-soft) 62%);
+  transition:color 500ms var(--ease), background-color 500ms var(--ease) 200ms;
+}
+
+/* ==========================================================
+   SECTIONS
+   ========================================================== */
+.section{
+  padding:var(--s11) 0;
+  position:relative;
+  z-index:1;
+}
+.section-head{max-width:720px;margin-bottom:var(--s8)}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:var(--s2);
+  font-size:11px;font-weight:700;
+  letter-spacing:0.12em;
+  color:var(--accent);
+  margin-bottom:var(--s3);
+}
+.eyebrow::before{content:'';width:20px;height:2px;background:var(--accent)}
+.section-head h2{
+  font-size:clamp(2rem, 4.5vw, 3.4rem);
+  line-height:1.05;
+  font-weight:800;
+  letter-spacing:0;
+  color:var(--ink);
+  text-wrap:balance;
+  margin-bottom:var(--s4);
+}
+.section-head p{
+  font-size:15px;
+  line-height:1.8;
+  color:var(--ink-soft);
+  max-width:55ch;
+  text-wrap:pretty;
+}
+
+/* ==========================================================
+   SERVICES
+   ========================================================== */
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:var(--s4);
+}
+.service-block{
+  position:relative;
+  background:var(--bg-card);
+  border:1px solid var(--line-soft);
+  border-radius:var(--r-lg);
+  padding:var(--s7) var(--s6);
+  box-shadow:var(--shadow-2);
+  overflow:hidden;
+  transition:transform var(--dur-slow) var(--ease), box-shadow var(--dur-slow) var(--ease), border-color var(--dur-fast) var(--ease);
+  will-change:transform;
+}
+.service-block:hover{
+  transform:translateY(-3px);
+  box-shadow:var(--shadow-3);
+  border-color:var(--line);
+}
+.spotlight{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:0;
+  transition:opacity var(--dur-fast) var(--ease);
+  background:radial-gradient(240px circle at var(--mx, 50%) var(--my, 50%), rgba(255,107,0,0.10), transparent 70%);
+  border-radius:inherit;
+}
+.service-block:hover .spotlight{opacity:1}
+
+.service-num{
+  display:block;
+  font-size:11px;
+  font-weight:800;
+  color:var(--ink-mute);
+  letter-spacing:0.14em;
+  margin-bottom:var(--s4);
+  position:relative;
+  z-index:1;
+}
+.service-icon{
+  width:52px;height:52px;
+  background:var(--accent-soft);
+  border-radius:var(--r-md);
+  display:grid;place-items:center;
+  margin-bottom:var(--s4);
+  transition:transform var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease);
+  position:relative;
+  z-index:1;
+}
+.service-block:hover .service-icon{
+  transform:rotate(-4deg) scale(1.04);
+  background:rgba(255,107,0,0.14);
+}
+.service-icon svg{width:24px;height:24px;stroke:var(--accent);fill:none;stroke-width:1.9}
+.service-block h3{
+  font-size:clamp(1.2rem, 2vw, 1.5rem);
+  font-weight:700;
+  line-height:1.25;
+  color:var(--ink);
+  margin-bottom:var(--s2);
+  position:relative;
+  z-index:1;
+}
+.service-block p{
+  font-size:14px;
+  line-height:1.8;
+  color:var(--ink-soft);
+  max-width:38ch;
+  margin-bottom:var(--s4);
+  position:relative;
+  z-index:1;
+}
+.service-features{
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:var(--s2);
+  position:relative;
+  z-index:1;
+}
+.service-features li{
+  display:flex;
+  align-items:center;
+  gap:var(--s2);
+  font-size:13px;
+  color:var(--ink-soft);
+}
+.service-features li::before{
+  content:'';
+  width:14px;height:1px;
+  background:var(--accent);
+  flex-shrink:0;
+}
+@media(max-width:700px){
+  .services-grid{grid-template-columns:1fr}
+  .service-block{padding:var(--s6) var(--s5)}
+}
+
+/* ==========================================================
+   GALLERY — BENTO
+   ========================================================== */
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(12, 1fr);
+  grid-auto-rows:200px;
+  gap:var(--s3);
+}
+.gallery-item{
+  position:relative;
+  overflow:hidden;
+  border-radius:var(--r-lg);
+  background:var(--bg-cream-mid);
+  border:1px solid var(--line-soft);
+  transition:transform var(--dur-slow) var(--ease), box-shadow var(--dur-slow) var(--ease);
+  will-change:transform;
+}
+.gallery-item:hover{
+  transform:translateY(-2px);
+  box-shadow:var(--shadow-2);
+}
+.gallery-item--hero{grid-column:span 7;grid-row:span 2}
+.gallery-item:nth-child(2){grid-column:span 5}
+.gallery-item:nth-child(3){grid-column:span 5}
+.gallery-item:nth-child(4){grid-column:span 12}
+
+.gallery-item img{
+  width:100%;height:100%;
+  object-fit:cover;
+  filter:grayscale(0.25) contrast(1.03);
+  transition:transform 800ms var(--ease), filter var(--dur-slow) var(--ease);
+}
+.gallery-item:hover img{
+  transform:scale(1.04);
+  filter:grayscale(0) contrast(1.03);
+}
+.gallery-item::after{
+  content:'';
+  position:absolute;inset:0;
+  background:linear-gradient(to top, rgba(26,21,18,0.82), transparent 55%);
+  pointer-events:none;
+}
+.gallery-cap{
+  position:absolute;
+  bottom:0;inset-inline:0;
+  padding:var(--s5) var(--s4) var(--s4);
+  color:var(--ink-on-dark);
+  display:flex;flex-direction:column;
+  gap:var(--s1);
+  z-index:1;
+}
+.cap-tag{
+  display:inline-flex;
+  align-self:flex-start;
+  background:var(--accent);
+  color:#FFF;
+  font-size:10px;font-weight:800;
+  padding:2px var(--s2);
+  border-radius:var(--r-sm);
+  letter-spacing:0.05em;
+  margin-bottom:var(--s1);
+}
+.gallery-cap h4{
+  font-size:15px;
+  font-weight:700;
+  line-height:1.3;
+}
+@media(max-width:768px){
+  .gallery-grid{
+    grid-template-columns:repeat(2, 1fr);
+    grid-auto-rows:160px;
+  }
+  .gallery-item--hero{grid-column:1 / -1;grid-row:span 2}
+  .gallery-item:nth-child(2),
+  .gallery-item:nth-child(3){grid-column:span 1}
+  .gallery-item:nth-child(4){grid-column:1 / -1}
+  .gallery-cap{padding:var(--s4) var(--s3) var(--s3)}
+}
+
+/* ==========================================================
+   AREAS
+   ========================================================== */
+.area-search{
+  position:relative;
+  max-width:400px;
+  margin-bottom:var(--s5);
+}
+.area-search input{
+  width:100%;
+  background:var(--bg-card);
+  border:1px solid var(--line);
+  border-radius:var(--r-md);
+  padding:var(--s3) var(--s3) var(--s3) var(--s8);
+  font-family:inherit;
+  font-size:14px;
+  color:var(--ink);
+  transition:border-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
+}
+.area-search input::placeholder{color:var(--ink-mute)}
+.area-search input:focus{
+  outline:none;
+  border-color:var(--accent);
+  box-shadow:0 0 0 3px rgba(255,107,0,0.12);
+}
+.search-icon{
+  position:absolute;
+  top:50%;
+  inset-inline-start:var(--s3);
+  transform:translateY(-50%);
+  width:16px;height:16px;
+  stroke:var(--ink-mute);
+  fill:none;
+  stroke-width:2;
+  pointer-events:none;
+}
+.area-search input:focus + .search-icon{stroke:var(--accent)}
+
+.area-tabs{
+  display:inline-flex;
+  gap:var(--s1);
+  background:var(--bg-card);
+  border:1px solid var(--line);
+  border-radius:var(--r-pill);
+  padding:var(--s1);
+  margin-bottom:var(--s6);
+}
+.area-tab{
+  padding:var(--s2) var(--s5);
+  border-radius:var(--r-pill);
+  font-size:13px;font-weight:600;
+  color:var(--ink-soft);
+  transition:background-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+}
+.area-tab:hover:not(.active){color:var(--ink)}
+.area-tab.active{
+  background:var(--accent);
+  color:#FFF;
+}
+.districts-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:var(--s4);
+}
+.district{
+  background:var(--bg-card);
+  border:1px solid var(--line-soft);
+  border-radius:var(--r-lg);
+  padding:var(--s5);
+  transition:border-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
+}
+.district:hover{
+  border-color:var(--line);
+  box-shadow:var(--shadow-1);
+}
+.district[hidden]{display:none}
+.district-head{
+  display:flex;
+  align-items:center;
+  gap:var(--s3);
+  padding-bottom:var(--s3);
+  margin-bottom:var(--s4);
+  border-bottom:1px solid var(--line);
+}
+.district-badge{
+  width:42px;height:42px;
+  background:var(--accent);
+  color:#FFF;
+  border-radius:var(--r-md);
+  display:grid;place-items:center;
+  font-size:17px;font-weight:800;
+  flex-shrink:0;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.2);
+}
+.district-head h3{font-size:16px;font-weight:700;line-height:1.25;color:var(--ink)}
+.district-head small{display:block;font-size:11px;color:var(--ink-mute);font-weight:500;margin-top:2px}
+.streets{
+  list-style:none;
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(120px, 1fr));
+  gap:var(--s1) var(--s3);
+}
+.streets li{
+  display:flex;
+  align-items:center;
+  gap:var(--s2);
+  font-size:13px;
+  color:var(--ink-soft);
+  padding:var(--s1) var(--s2);
+  border-radius:var(--r-sm);
+  transition:color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease);
+}
+.streets li::before{
+  content:'';
+  width:4px;height:4px;
+  background:var(--accent);
+  border-radius:50%;
+  flex-shrink:0;
+}
+.streets li:hover{color:var(--ink);background:var(--line-soft)}
+.streets li.street-highlight{background:var(--accent-soft);color:var(--accent-hover);font-weight:600}
+.streets li[hidden]{display:none}
+.area-empty{
+  max-width:400px;
+  padding:var(--s4);
+  background:var(--accent-soft);
+  border:1px solid rgba(255,107,0,0.2);
+  border-radius:var(--r-md);
+  font-size:14px;
+  color:var(--accent-hover);
+  margin-top:var(--s5);
+}
+.area-empty[hidden]{display:none}
+@media(max-width:700px){
+  .districts-grid{grid-template-columns:1fr}
+  .area-tabs{width:100%}
+  .area-tab{flex:1;text-align:center;padding-inline:var(--s2)}
+  .area-search{max-width:100%}
+}
+
+/* ==========================================================
+   FAQ
+   ========================================================== */
+.faq-list{
+  max-width:880px;
+  border-top:1px solid var(--line-firm);
+}
+.faq-item{
+  border-bottom:1px solid var(--line-firm);
+}
+.faq-q{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:var(--s4);
+  padding:var(--s5) 0;
+  text-align:start;
+  font-size:15px;
+  font-weight:700;
+  color:var(--ink);
+  transition:color var(--dur-fast) var(--ease);
+}
+.faq-q:hover{color:var(--accent)}
+.faq-icon{
+  width:26px;height:26px;
+  border:1px solid var(--line-firm);
+  border-radius:50%;
+  position:relative;
+  flex-shrink:0;
+  transition:background-color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+}
+.faq-icon::before,.faq-icon::after{
+  content:'';
+  position:absolute;
+  background:var(--ink-soft);
+  transition:transform var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease);
+}
+.faq-icon::before{
+  width:10px;height:1.5px;
+  top:calc(50% - 0.75px);
+  left:calc(50% - 5px);
+}
+.faq-icon::after{
+  width:1.5px;height:10px;
+  top:calc(50% - 5px);
+  left:calc(50% - 0.75px);
+}
+.faq-q[aria-expanded="true"] .faq-icon{
+  background:var(--accent);
+  border-color:var(--accent);
+  transform:rotate(180deg);
+}
+.faq-q[aria-expanded="true"] .faq-icon::before,
+.faq-q[aria-expanded="true"] .faq-icon::after{
+  background:#FFF;
+}
+.faq-q[aria-expanded="true"] .faq-icon::after{
+  transform:rotate(90deg);
+  opacity:0;
+}
+.faq-a{
+  display:grid;
+  grid-template-rows:0fr;
+  transition:grid-template-rows var(--dur-slow) var(--ease);
+}
+.faq-a > div{overflow:hidden}
+.faq-a p{
+  padding:0 0 var(--s5);
+  font-size:13.5px;
+  line-height:1.85;
+  color:var(--ink-soft);
+  max-width:65ch;
+}
+.faq-a.open{grid-template-rows:1fr}
+
+/* ==========================================================
+   TESTIMONIALS
+   ========================================================== */
+.testi-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:var(--s4);
+}
+.testi{
+  background:rgba(255,255,255,0.5);
+  border:1px solid var(--line-soft);
+  border-radius:var(--r-lg);
+  padding:var(--s5);
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  gap:var(--s4);
+  transition:transform var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
+}
+.testi:nth-child(2){
+  background:var(--bg-card);
+  box-shadow:var(--shadow-2);
+}
+.testi:hover{
+  transform:translateY(-2px);
+  background:var(--bg-card);
+  box-shadow:var(--shadow-2);
+}
+.testi-stars{
+  font-size:12px;
+  color:var(--accent);
+  letter-spacing:2px;
+  margin-bottom:var(--s3);
+}
+.testi-text{
+  font-size:13.5px;
+  line-height:1.85;
+  color:var(--ink-soft);
+}
+.testi-author{
+  display:flex;
+  align-items:center;
+  gap:var(--s3);
+  padding-top:var(--s4);
+  border-top:1px solid var(--line-soft);
+}
+.testi-avatar{
+  width:38px;height:38px;
+  border-radius:50%;
+  background:var(--accent);
+  color:#FFF;
+  display:grid;place-items:center;
+  font-size:11px;font-weight:800;
+  flex-shrink:0;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.2);
+}
+.testi-name{font-size:13px;font-weight:700;line-height:1.3;color:var(--ink)}
+.testi-role{font-size:11px;color:var(--ink-mute)}
+@media(max-width:800px){.testi-grid{grid-template-columns:1fr}}
+
+/* ==========================================================
+   CONTACT
+   ========================================================== */
+.contact-list{
+  max-width:880px;
+  border-top:1px solid var(--line-firm);
+}
+.contact-row{
+  display:grid;
+  grid-template-columns:auto 1fr auto auto;
+  align-items:center;
+  gap:var(--s4);
+  padding:var(--s4) 0;
+  border-bottom:1px solid var(--line-firm);
+  transition:background-color var(--dur-fast) var(--ease);
+}
+.contact-row:hover{background:rgba(255,107,0,0.03)}
+.contact-icon{
+  width:38px;height:38px;
+  background:var(--accent-soft);
+  border-radius:var(--r-md);
+  display:grid;place-items:center;
+  flex-shrink:0;
+}
+.contact-icon svg{width:18px;height:18px;stroke:var(--accent);fill:none;stroke-width:2}
+.contact-info{display:flex;flex-direction:column;gap:2px}
+.contact-name{font-size:15px;font-weight:700;line-height:1.25;color:var(--ink)}
+.contact-role{font-size:11px;font-weight:500;color:var(--ink-mute)}
+.contact-phone{
+  font-size:14px;
+  font-weight:600;
+  color:var(--ink-soft);
+  font-variant-numeric:tabular-nums;
+  direction:ltr;
+  unicode-bidi:embed;
+}
+.contact-cta{
+  display:inline-flex;
+  align-items:center;
+  gap:var(--s1);
+  background:var(--accent);
+  color:#FFF;
+  padding:var(--s2) var(--s3);
+  border-radius:var(--r-md);
+  font-size:11px;font-weight:700;
+  transition:background-color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+}
+.contact-cta:hover{background:var(--accent-hover)}
+.contact-cta:active{transform:scale(0.96)}
+.contact-cta svg{width:13px;height:13px}
+
+.contact-meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:var(--s3);
+  margin-top:var(--s5);
+  max-width:880px;
+}
+.meta-chip{
+  display:inline-flex;
+  align-items:center;
+  gap:var(--s2);
+  padding:var(--s2) var(--s3);
+  background:var(--bg-card);
+  border:1px solid var(--line);
+  border-radius:var(--r-md);
+  font-size:12px;
+  color:var(--ink-soft);
+}
+.meta-chip svg{width:14px;height:14px;stroke:var(--accent);fill:none;stroke-width:2}
+.meta-chip strong{color:var(--ink);font-weight:700}
+@media(max-width:600px){
+  .contact-row{
+    grid-template-columns:auto 1fr auto;
+    gap:var(--s2);
+  }
+  .contact-phone{
+    grid-column:1 / -1;
+    padding-inline-start:calc(38px + var(--s4));
+    font-size:13px;
+  }
+}
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+.site-footer{
+  background:var(--bg-dark);
+  color:var(--ink-on-dark-soft);
+  padding:var(--s10) 0 calc(var(--s11) + var(--s8));
+  position:relative;
+  z-index:1;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1.5fr;
+  gap:var(--s8);
+  padding-bottom:var(--s7);
+  border-bottom:1px solid var(--line-dark);
+}
+.footer-brand h4{
+  font-size:17px;
+  font-weight:800;
+  color:var(--ink-on-dark);
+  margin-bottom:var(--s3);
+}
+.footer-brand p{
+  font-size:13px;
+  line-height:1.85;
+  color:var(--ink-on-dark-soft);
+  max-width:38ch;
+}
+.footer-col h5{
+  font-size:11px;
+  font-weight:700;
+  color:var(--accent);
+  letter-spacing:0.1em;
+  margin-bottom:var(--s4);
+}
+.footer-col a{
+  display:block;
+  font-size:13px;
+  color:var(--ink-on-dark-soft);
+  padding-block:var(--s1);
+  transition:color var(--dur-fast) var(--ease);
+}
+.footer-col a:hover{color:var(--accent)}
+.footer-phones{
+  display:flex;
+  flex-wrap:wrap;
+  gap:var(--s2);
+}
+.footer-phones a{
+  display:inline-block;
+  padding:var(--s1) var(--s3);
+  border:1px solid var(--line-dark);
+  border-radius:var(--r-md);
+  font-size:12px;
+  font-weight:500;
+  color:var(--ink-on-dark);
+  transition:background-color var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+}
+.footer-phones a:hover{
+  background:var(--accent);
+  color:#FFF;
+  border-color:var(--accent);
+}
+.footer-bottom{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:var(--s3);
+  padding-top:var(--s5);
+  font-size:11px;
+  color:rgba(245,240,232,0.4);
+}
+.footer-tag{
+  color:var(--accent);
+  font-weight:600;
+}
+@media(max-width:800px){
+  .footer-grid{grid-template-columns:1fr;gap:var(--s6)}
+}
+
+/* ==========================================================
+   MOBILE DOCK
+   ========================================================== */
+.dock-wrap{
+  position:fixed;
+  bottom:var(--s3);
+  inset-inline:0;
+  z-index:990;
+  display:flex;
+  justify-content:center;
+  padding:0 var(--s4);
+  pointer-events:none;
+}
+.dock{
+  pointer-events:auto;
+  display:flex;
+  align-items:center;
+  gap:var(--s1);
+  background:linear-gradient(135deg, rgba(255,255,255,0.62), rgba(245,240,232,0.5));
+  backdrop-filter:blur(16px) saturate(180%);
+  -webkit-backdrop-filter:blur(16px) saturate(180%);
+  border:1px solid rgba(255,255,255,0.5);
+  border-radius:var(--r-xl);
+  padding:var(--s1) var(--s2);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.75),
+    inset 0 -1px 0 rgba(26,21,18,0.04),
+    0 8px 32px rgba(26,21,18,0.14);
+}
+.dock-item{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:2px;
+  padding:var(--s2) var(--s3);
+  border-radius:var(--r-md);
+  font-size:9px;
+  font-weight:600;
+  color:var(--ink-mute);
+  min-width:46px;
+  transition:color var(--dur-fast) var(--ease), background-color var(--dur-fast) var(--ease);
+}
+.dock-item svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2}
+.dock-item:hover{color:var(--ink)}
+.dock-item.active{
+  color:var(--accent);
+  background:rgba(255,107,0,0.08);
+}
+.dock-center{
+  width:48px;height:48px;
+  background:var(--accent);
+  color:#FFF;
+  border-radius:var(--r-md);
+  display:grid;place-items:center;
+  margin-inline:var(--s1);
+  box-shadow:0 4px 16px rgba(255,107,0,0.32);
+  transition:transform var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
+}
+.dock-center:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,107,0,0.42)}
+.dock-center:active{transform:scale(0.94)}
+.dock-center svg{width:20px;height:20px;stroke:#FFF;fill:none;stroke-width:2.4}
+
+@media(min-width:981px){.dock-wrap{display:none}}
+@media(max-width:480px){
+  .dock-item span{display:none}
+  .dock-item{min-width:38px;padding:var(--s2)}
+  .dock-center{width:44px;height:44px}
+}
+
+/* ==========================================================
+   BOTTOM SHEET
+   ========================================================== */
+.sheet-backdrop{
+  position:fixed;
+  inset:0;
+  z-index:1100;
+  background:rgba(26,21,18,0.55);
+  opacity:0;
+  visibility:hidden;
+  transition:opacity var(--dur-fast) var(--ease), visibility var(--dur-fast) var(--ease);
+}
+.sheet-backdrop.open{opacity:1;visibility:visible}
+.sheet{
+  position:fixed;
+  left:50%;
+  bottom:0;
+  transform:translateX(-50%) translateY(100%);
+  width:100%;
+  max-width:440px;
+  z-index:1101;
+  background:linear-gradient(180deg, rgba(255,255,255,0.78), rgba(245,240,232,0.72));
+  backdrop-filter:blur(24px) saturate(180%);
+  -webkit-backdrop-filter:blur(24px) saturate(180%);
+  border:1px solid rgba(255,255,255,0.55);
+  border-bottom:none;
+  border-radius:var(--r-xl) var(--r-xl) 0 0;
+  padding:var(--s4) var(--s5) calc(var(--s5) + env(safe-area-inset-bottom));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.85),
+    0 -16px 48px rgba(26,21,18,0.18);
+  max-height:82vh;
+  overflow-y:auto;
+  transition:transform var(--dur-slow) var(--ease);
+}
+.sheet.open{transform:translateX(-50%) translateY(0)}
+.sheet-handle{
+  width:32px;height:3px;
+  background:rgba(26,21,18,0.18);
+  border-radius:2px;
+  margin:0 auto var(--s4);
+}
+.sheet h3{
+  font-size:17px;
+  font-weight:800;
+  color:var(--ink);
+  margin-bottom:var(--s4);
+  padding-bottom:var(--s3);
+  border-bottom:1px solid var(--line);
+}
+.sheet-actions{
+  display:flex;
+  flex-direction:column;
+  gap:var(--s2);
+}
+.sheet-action{
+  display:flex;
+  align-items:center;
+  gap:var(--s3);
+  padding:var(--s3);
+  border:1px solid var(--line-soft);
+  border-radius:var(--r-md);
+  background:rgba(255,255,255,0.6);
+  font-size:13px;
+  font-weight:600;
+  color:var(--ink);
+  text-align:start;
+  transition:background-color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+  width:100%;
+}
+.sheet-action:hover{
+  background:rgba(255,255,255,0.9);
+  border-color:var(--line);
+}
+.sheet-action:active{transform:scale(0.98)}
+.sheet-action .box{
+  width:34px;height:34px;
+  border-radius:var(--r-sm);
+  background:var(--accent);
+  color:#FFF;
+  display:grid;place-items:center;
+  flex-shrink:0;
+}
+.sheet-action .box svg{width:16px;height:16px;stroke:#FFF;fill:none;stroke-width:2.2}
+.sheet-action small{
+  display:block;
+  font-size:11px;
+  font-weight:400;
+  color:var(--ink-mute);
+  margin-top:1px;
+  font-variant-numeric:tabular-nums;
+}
+.sheet-close{
+  position:absolute;
+  top:var(--s3);
+  inset-inline-end:var(--s3);
+  width:30px;height:30px;
+  border-radius:50%;
+  background:rgba(26,21,18,0.06);
+  display:grid;place-items:center;
+  transition:background-color var(--dur-fast) var(--ease);
+}
+.sheet-close:hover{background:rgba(26,21,18,0.12)}
+.sheet-close svg{width:14px;height:14px;stroke:var(--ink-soft);fill:none;stroke-width:2.4}
+
+/* ==========================================================
+   REVEAL
+   ========================================================== */
+[data-reveal]{
+  opacity:0;
+  transform:translateY(24px);
+  transition:opacity 700ms var(--ease), transform 700ms var(--ease);
+}
+[data-reveal].visible{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* ==========================================================
+   REDUCED MOTION
+   ========================================================== */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:0.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:0.01ms !important;
+    scroll-behavior:auto !important;
+  }
+  [data-reveal]{opacity:1 !important;transform:none !important}
+  .hero-badge,
+  .hero-lead,
+  .hero-actions,
+  .hero-proof,
+  .hero-title .line > span{
+    opacity:1 !important;
+    transform:none !important;
+  }
+  .loader-fill{width:100% !important}
+  .marquee-track{animation:none}
+  body::before{display:none}
+  .tagline .w{color:var(--ink) !important}
+  .tagline .w.hl{background:var(--accent-soft) !important}
+}
+
+/* ==========================================================
+   REDUCED TRANSPARENCY
+   ========================================================== */
+@media(prefers-reduced-transparency:reduce){
+  .site-header.is-scrolled,
+  .dock,
+  .sheet,
+  .sheet-action{
+    background:var(--bg-cream) !important;
+    backdrop-filter:none !important;
+    -webkit-backdrop-filter:none !important;
+  }
+}
+
+/* ==========================================================
+   FALLBACKS
+   ========================================================== */
+@supports not (backdrop-filter:blur(1px)){
+  .site-header.is-scrolled{background:var(--bg-cream)}
+  .dock{background:var(--bg-card)}
+  .sheet{background:var(--bg-cream)}
+}
+
+@media(max-width:380px){
+  .wrap{padding:0 var(--s3)}
+  .hero-title{font-size:2.4rem}
+  .hero-proof{gap:var(--s3)}
+  .hero-proof strong{font-size:1.3rem}
+}
+</style>
+</head>
+<body data-stage="hero">
+
+<a href="#main" class="skip-link">پرش به محتوای اصلی</a>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <defs>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+    <symbol id="i-pickaxe" viewBox="0 0 24 24"><path d="M14.531 12.469 6.619 20.38a1 1 0 1 1-3-3l7.912-7.912"/><path d="M15.686 4.314A12.5 12.5 0 0 0 5.461 2.958 1 1 0 0 0 5.58 4.71a22 22 0 0 1 6.318 3.393"/><path d="M17.7 3.7a1 1 0 0 0-1.4 0l-4.6 4.6a1 1 0 0 0 0 1.4l2.6 2.6a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4z"/><path d="M19.686 8.314a12.501 12.501 0 0 1 1.356 10.225 1 1 0 0 1-1.751-.119 22 22 0 0 0-3.393-6.318"/></symbol>
+    <symbol id="i-hard-hat" viewBox="0 0 24 24"><path d="M2 18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1z"/><path d="M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5"/><path d="M4 15v-3a6 6 0 0 1 6-6"/><path d="M14 6a6 6 0 0 1 6 6v3"/></symbol>
+    <symbol id="i-headphones" viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2"/><path d="M22 10h-5a2 2 0 0 0 0 4h5v-4z"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></symbol>
+    <symbol id="i-images" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+  </defs>
+</svg>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <div class="loader-mark"><svg><use href="#i-truck"/></svg></div>
+    <div class="loader-title">باکس قادری</div>
+    <div class="loader-track"><div class="loader-fill" id="loaderFill"></div></div>
+    <div class="loader-pct" id="loaderPct">۰٪</div>
+  </div>
+</div>
+<noscript><style>#loader{display:none}[data-reveal]{opacity:1;transform:none}.hero-badge,.hero-lead,.hero-actions,.hero-proof{opacity:1;transform:none}.hero-title .line>span{transform:none}</style></noscript>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#home" class="brand" aria-label="باکس قادری — صفحه اصلی">
+      <div class="brand-mark" aria-hidden="true"><svg><use href="#i-truck"/></svg></div>
+      <div class="brand-text">
+        <span class="brand-name">باکس قادری</span>
+        <span class="brand-sub">Est. 2011 · مشهد</span>
+      </div>
+    </a>
+    <nav class="main-nav" aria-label="ناوبری اصلی">
+      <a href="#services">خدمات</a>
+      <a href="#gallery">گالری</a>
+      <a href="#areas">مناطق</a>
+      <a href="#faq">سوالات</a>
+      <a href="#contact">تماس</a>
+    </nav>
+    <div class="header-actions">
+      <span class="status-chip" aria-label="وضعیت: آماده خدمت">
+        <span class="status-dot" aria-hidden="true"></span>
+        آماده خدمت
+      </span>
+      <a href="tel:+989152000370" class="header-cta" data-magnet>
+        <svg aria-hidden="true"><use href="#i-phone"/></svg>
+        <span>۰۹۱۵۲۰۰۰۳۷۰</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" id="home" data-stage="hero">
+  <div class="wrap hero-inner">
+    <span class="hero-badge">
+      <span class="badge-dot" aria-hidden="true"></span>
+      ۱۵ سال تجربه در منطقه ۳ و ۴
+    </span>
+    <h1 class="hero-title">
+      <span class="line"><span style="--i:0">حمل خاک</span></span>
+      <span class="line"><span style="--i:1">و نخاله،</span></span>
+      <span class="line"><span style="--i:2"><em>بدون توقف</em></span></span>
+      <span class="line"><span style="--i:3">پروژه.</span></span>
+    </h1>
+    <p class="hero-lead">
+      در منطقه ۳ و ۴ مشهد. <strong>۱۵ سال سابقه</strong>، <strong>۵۰ باکس آماده</strong> —
+      تیمی که وقتی می‌گویید «فردا»، فردا آنجاست.
+    </p>
+    <div class="hero-actions">
+      <a href="tel:+989152000370" class="btn btn-primary" data-magnet>
+        <svg aria-hidden="true"><use href="#i-phone"/></svg>
+        تماس برای هماهنگی
+      </a>
+      <a href="#services" class="btn btn-ghost">مشاهده خدمات</a>
+    </div>
+    <div class="hero-proof" aria-label="اثبات اجتماعی">
+      <div>
+        <strong>۱۵</strong>
+        <span>سال تجربه</span>
+      </div>
+      <div>
+        <strong>۵۰</strong>
+        <span>باکس آماده</span>
+      </div>
+      <div>
+        <strong>۵۰۰۰</strong>
+        <span>پروژه موفق</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>حمل خاک و نخاله</span><span class="dot">◆</span>
+    <span>خاکبرداری مکانیزه</span><span class="dot">◆</span>
+    <span>منطقه ۳ و ۴ مشهد</span><span class="dot">◆</span>
+    <span>۵۰ باکس آماده</span><span class="dot">◆</span>
+    <span>بدون واسطه</span><span class="dot">◆</span>
+    <span>تماس مستقیم</span><span class="dot">◆</span>
+    <span>حمل خاک و نخاله</span><span class="dot">◆</span>
+    <span>خاکبرداری مکانیزه</span><span class="dot">◆</span>
+    <span>منطقه ۳ و ۴ مشهد</span><span class="dot">◆</span>
+    <span>۵۰ باکس آماده</span><span class="dot">◆</span>
+    <span>بدون واسطه</span><span class="dot">◆</span>
+    <span>تماس مستقیم</span><span class="dot">◆</span>
+  </div>
+</div>
+
+<section class="stats-strip" aria-label="آمار کلیدی">
+  <div class="stats-grid">
+    <div class="stat">
+      <span class="stat-num" data-count="15">۰</span>
+      <span class="stat-label">سال تجربه در مشهد</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-count="50">۰</span>
+      <span class="stat-label">باکس آمادهٔ کار</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-count="5000">۰</span>
+      <span class="stat-label">پروژهٔ تحویل‌شده</span>
+    </div>
+  </div>
+</section>
+
+<section class="tagline-section" data-stage="tagline" aria-label="جملهٔ کلیدی">
+  <div class="wrap">
+    <p class="tagline" id="taglineText">نخاله‌ها را ما می‌بریم، تا خیال‌تان از ادامهٔ کار راحت باشد.</p>
+  </div>
+</section>
+
+<section class="section" id="services" data-stage="services">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">خدمات</div>
+      <h2>چهار کاری که<br>ما بلدیم.</h2>
+      <p>نه بیشتر، نه کمتر. همین چهار خدمت را در منطقه ۳ و ۴، درست و سر وقت انجام می‌دهیم.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service-block" data-reveal data-spotlight data-tilt>
+        <div class="spotlight" aria-hidden="true"></div>
+        <span class="service-num">01 / حمل</span>
+        <div class="service-icon"><svg><use href="#i-truck"/></svg></div>
+        <h3>حمل خاک و نخاله</h3>
+        <p>۵۰ باکس مجهز، حمل ایمن در تمام خیابان‌های منطقه ۳ و ۴.</p>
+        <ul class="service-features">
+          <li>ارسال فوری به محل پروژه</li>
+          <li>بارگیری و تخلیه ایمن</li>
+          <li>تیم آموزش‌دیده</li>
+        </ul>
+      </article>
+      <article class="service-block" data-reveal data-spotlight data-tilt>
+        <div class="spotlight" aria-hidden="true"></div>
+        <span class="service-num">02 / خاکبرداری</span>
+        <div class="service-icon"><svg><use href="#i-pickaxe"/></svg></div>
+        <h3>خاکبرداری مکانیزه</h3>
+        <p>ماشین‌آلات مدرن و اپراتور مجرب، برای پروژه‌هایی که زمین سخت دارند.</p>
+        <ul class="service-features">
+          <li>تجهیزات به‌روز</li>
+          <li>پیشرفت سریع پروژه</li>
+          <li>حداقل اختلال</li>
+        </ul>
+      </article>
+      <article class="service-block" data-reveal data-spotlight data-tilt>
+        <div class="spotlight" aria-hidden="true"></div>
+        <span class="service-num">03 / کارگری</span>
+        <div class="service-icon"><svg><use href="#i-hard-hat"/></svg></div>
+        <h3>کارگران حرفه‌ای</h3>
+        <p>بارگیری، تخلیه و کارهای ساختمانی با تیم آموزش‌دیده و متعهد.</p>
+        <ul class="service-features">
+          <li>تیم مجرب</li>
+          <li>رعایت اصول ایمنی</li>
+          <li>هماهنگی کامل</li>
+        </ul>
+      </article>
+      <article class="service-block" data-reveal data-spotlight data-tilt>
+        <div class="spotlight" aria-hidden="true"></div>
+        <span class="service-num">04 / پشتیبانی</span>
+        <div class="service-icon"><svg><use href="#i-headphones"/></svg></div>
+        <h3>پشتیبانی تلفنی</h3>
+        <p>پاسخ‌گویی در تمام ساعات کاری، بدون منشی، بدون واسطه.</p>
+        <ul class="service-features">
+          <li>تماس مستقیم با تیم</li>
+          <li>بدون واسطه</li>
+          <li>پاسخ‌گویی سریع</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gallery" data-stage="gallery">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">گالری</div>
+      <h2>تجهیزات و<br>نمونه‌کارها.</h2>
+      <p>نگاهی به ناوگان و کیفیت کار ما در پروژه‌های مختلف منطقه ۳ و ۴.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-item--hero" data-reveal>
+        <img src="images/truck-main.jpg" alt="خاور کمپرسی ۶۰۸ آمادهٔ حمل" loading="eager">
+        <div class="gallery-cap">
+          <span class="cap-tag">ناوگان</span>
+          <h4>خاور کمپرسی ۶۰۸</h4>
+        </div>
+      </div>
+      <div class="gallery-item" data-reveal>
+        <img src="images/orange-truck.jpg" alt="صف باکس‌های نارنجی آماده" loading="lazy">
+        <div class="gallery-cap">
+          <h4>صف باکس‌های آماده</h4>
+        </div>
+      </div>
+      <div class="gallery-item" data-reveal>
+        <img src="images/worker-loading.jpg" alt="تیم کارگران در حال بارگیری" loading="lazy">
+        <div class="gallery-cap">
+          <h4>بارگیری حرفه‌ای</h4>
+        </div>
+      </div>
+      <div class="gallery-item" data-reveal>
+        <img src="images/site-service.jpg" alt="خدمات حمل نخاله در محل پروژه" loading="lazy">
+        <div class="gallery-cap">
+          <h4>در محل پروژه</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="areas" data-stage="areas">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">پوشش</div>
+      <h2>منطقه ۳ و ۴،<br>تمام خیابان‌ها.</h2>
+      <p>اگر پروژه‌تان در این دو منطقه است، ما آنجاییم. اگر شک دارید، تماس بگیرید.</p>
+    </div>
+
+    <div class="area-search" data-reveal>
+      <input type="search" id="streetSearch" placeholder="نام خیابان را تایپ کنید…" aria-label="جستجوی خیابان" autocomplete="off">
+      <svg class="search-icon" aria-hidden="true"><use href="#i-search"/></svg>
+    </div>
+
+    <div class="area-tabs" role="tablist" aria-label="فیلتر مناطق" data-reveal>
+      <button class="area-tab active" data-area="all" role="tab" aria-selected="true">همه</button>
+      <button class="area-tab" data-area="3" role="tab" aria-selected="false">منطقه ۳</button>
+      <button class="area-tab" data-area="4" role="tab" aria-selected="false">منطقه ۴</button>
+    </div>
+
+    <div class="districts-grid" id="districtsGrid">
+      <div class="district" data-area="3" data-reveal>
+        <div class="district-head">
+          <div class="district-badge">۳</div>
+          <div>
+            <h3>منطقه ۳</h3>
+            <small>۱۲ خیابان تحت پوشش</small>
+          </div>
+        </div>
+        <ul class="streets">
+          <li data-street="خیرآباد">خیرآباد</li>
+          <li data-street="فاطمیه">فاطمیه</li>
+          <li data-street="گاز">گاز</li>
+          <li data-street="مسلم">مسلم</li>
+          <li data-street="رسالت">رسالت</li>
+          <li data-street="راه آهن">راه آهن</li>
+          <li data-street="بلال">بلال</li>
+          <li data-street="قائم">قائم</li>
+          <li data-street="بهمن">بهمن</li>
+          <li data-street="خواجه ربیع">خواجه ربیع</li>
+          <li data-street="مهر مادر">مهر مادر</li>
+          <li data-street="قرقی">قرقی</li>
+        </ul>
+      </div>
+      <div class="district" data-area="4" data-reveal>
+        <div class="district-head">
+          <div class="district-badge">۴</div>
+          <div>
+            <h3>منطقه ۴</h3>
+            <small>۱۴ خیابان تحت پوشش</small>
+          </div>
+        </div>
+        <ul class="streets">
+          <li data-street="مهرگان">مهرگان</li>
+          <li data-street="عباس آباد">عباس آباد</li>
+          <li data-street="سیس آباد">سیس آباد</li>
+          <li data-street="طبرسی شمالی">طبرسی شمالی</li>
+          <li data-street="ایثار">ایثار</li>
+          <li data-street="فجر">فجر</li>
+          <li data-street="وحید">وحید</li>
+          <li data-street="کوی مهدی">کوی مهدی</li>
+          <li data-street="گلشور">گلشور</li>
+          <li data-street="طلاب">طلاب</li>
+          <li data-street="پنج تن">پنج تن</li>
+          <li data-street="التیمور">التیمور</li>
+          <li data-street="دروی">دروی</li>
+          <li data-street="شهید قربانی">شهید قربانی</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="area-empty" id="areaEmpty" hidden>
+      خیابانی با این نام پیدا نشد. برای استعلام پوشش، تماس بگیرید.
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq" data-stage="faq">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">سوالات</div>
+      <h2>قبل از تماس<br>بدانید.</h2>
+      <p>سه سوال رایج که قبل از زنگ زدن خوب است جوابشان را بدانید.</p>
+    </div>
+    <div class="faq-list" data-reveal>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="fa1" id="fq1">
+          <span>چقدر زمان می‌برد تا در محل حاضر شوید؟</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a" id="fa1" role="region" aria-labelledby="fq1">
+          <div><p>در محدودهٔ منطقه ۳ و ۴، معمولاً کمتر از ۲ ساعت. برای هماهنگی دقیق، تماس تلفنی بهترین راه است — همان لحظه می‌گوییم کی می‌رسیم.</p></div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="fa2" id="fq2">
+          <span>برای پروژه‌های بزرگ چه ترتیبی دارید؟</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a" id="fa2" role="region" aria-labelledby="fq2">
+          <div><p>برای پروژه‌های با حجم بالا، تعداد باکس و زمان‌بندی بر اساس پیشرفت کار تنظیم می‌شود. هماهنگی از طریق تماس مستقیم انجام می‌گیرد.</p></div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="fa3" id="fq3">
+          <span>آیا خدمات شما شامل بارگیری هم می‌شود؟</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-a" id="fa3" role="region" aria-labelledby="fq3">
+          <div><p>در صورت نیاز، تیم کارگری همراه با باکس اعزام می‌شود. بارگیری، تخلیه و تمیزکاری محل بعد از کار، بخشی از خدمت است.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="testimonials" data-stage="testimonials">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">تجربه</div>
+      <h2>مشتری‌ها<br>چه می‌گویند.</h2>
+      <p>سه تجربه از پیمانکاران و مالکان ساختمانی که با ما کار کرده‌اند.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi" data-reveal>
+        <div>
+          <div class="testi-stars" aria-label="امتیاز ۵ از ۵">★★★★★</div>
+          <p class="testi-text">در پروژه‌ای در منطقه ۳، سریع حاضر شدند و کار را تمیز تحویل دادند. هماهنگی تلفنی ساده بود.</p>
+        </div>
+        <div class="testi-author">
+          <div class="testi-avatar" aria-hidden="true">م.ر</div>
+          <div>
+            <div class="testi-name">محمد رضایی</div>
+            <div class="testi-role">پیمانکار ساختمانی</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi" data-reveal>
+        <div>
+          <div class="testi-stars" aria-label="امتیاز ۵ از ۵">★★★★★</div>
+          <p class="testi-text">برای نخاله‌های ساختمان در گلشور تماس گرفتم. همان روز آمدند و بعد از کار هم پیگیری کردند.</p>
+        </div>
+        <div class="testi-author">
+          <div class="testi-avatar" aria-hidden="true">ا.ح</div>
+          <div>
+            <div class="testi-name">احمد حسینی</div>
+            <div class="testi-role">مالک ساختمان</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi" data-reveal>
+        <div>
+          <div class="testi-stars" aria-label="امتیاز ۵ از ۵">★★★★★</div>
+          <p class="testi-text">۱۵ سال است برای پروژه‌هایم از خدمات آقای قادری استفاده می‌کنم. تعهدشان به زمان، مثال‌زدنی است.</p>
+        </div>
+        <div class="testi-author">
+          <div class="testi-avatar" aria-hidden="true">ع.ک</div>
+          <div>
+            <div class="testi-name">علی کریمی</div>
+            <div class="testi-role">سازنده</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact" data-stage="contact">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="eyebrow">تماس</div>
+      <h2>بدون واسطه،<br>با خود تیم.</h2>
+      <p>هزینهٔ حمل فقط با تماس تلفنی اعلام می‌شود — ۷ صبح تا ۵ بعد از ظهر، همه روزه.</p>
+    </div>
+    <div class="contact-list" data-reveal>
+      <a href="tel:+989152000370" class="contact-row">
+        <span class="contact-icon" aria-hidden="true"><svg><use href="#i-user"/></svg></span>
+        <span class="contact-info">
+          <span class="contact-name">علی قادری</span>
+          <span class="contact-role">مسئول هماهنگی</span>
+        </span>
+        <span class="contact-phone">۰۹۱۵۲۰۰۰۳۷۰</span>
+        <span class="contact-cta"><svg aria-hidden="true"><use href="#i-phone"/></svg> تماس</span>
+      </a>
+      <a href="tel:+989158000973" class="contact-row">
+        <span class="contact-icon" aria-hidden="true"><svg><use href="#i-user"/></svg></span>
+        <span class="contact-info">
+          <span class="contact-name">رضا قادری</span>
+          <span class="contact-role">ناوگان و لجستیک</span>
+        </span>
+        <span class="contact-phone">۰۹۱۵۸۰۰۰۹۷۳</span>
+        <span class="contact-cta"><svg aria-hidden="true"><use href="#i-phone"/></svg> تماس</span>
+      </a>
+      <a href="tel:+989152000390" class="contact-row">
+        <span class="contact-icon" aria-hidden="true"><svg><use href="#i-user"/></svg></span>
+        <span class="contact-info">
+          <span class="contact-name">عباس قادری</span>
+          <span class="contact-role">پشتیبانی فنی</span>
+        </span>
+        <span class="contact-phone">۰۹۱۵۲۰۰۰۳۹۰</span>
+        <span class="contact-cta"><svg aria-hidden="true"><use href="#i-phone"/></svg> تماس</span>
+      </a>
+      <a href="tel:+989152200540" class="contact-row">
+        <span class="contact-icon" aria-hidden="true"><svg><use href="#i-user"/></svg></span>
+        <span class="contact-info">
+          <span class="contact-name">مهدی قادری</span>
+          <span class="contact-role">مدیریت پروژه</span>
+        </span>
+        <span class="contact-phone">۰۹۱۵۲۲۰۰۵۴۰</span>
+        <span class="contact-cta"><svg aria-hidden="true"><use href="#i-phone"/></svg> تماس</span>
+      </a>
+    </div>
+    <div class="contact-meta" data-reveal>
+      <span class="meta-chip">
+        <svg aria-hidden="true"><use href="#i-clock"/></svg>
+        <strong>۷ صبح تا ۵ بعد از ظهر</strong> — همه روزه
+      </span>
+      <span class="meta-chip">
+        <svg aria-hidden="true"><use href="#i-wallet"/></svg>
+        هزینهٔ حمل فقط <strong>با تماس تلفنی</strong>
+      </span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h4>باکس قادری</h4>
+        <p>۱۵ سال حمل خاک و نخاله در مشهد. تیم متخصص، تجهیزات آماده، پاسخ‌گویی روزانه در منطقه ۳ و ۴.</p>
+      </div>
+      <div class="footer-col">
+        <h5>دسترسی</h5>
+        <a href="#services">خدمات</a>
+        <a href="#gallery">گالری</a>
+        <a href="#areas">مناطق</a>
+        <a href="#faq">سوالات</a>
+      </div>
+      <div class="footer-col">
+        <h5>شماره‌ها</h5>
+        <div class="footer-phones">
+          <a href="tel:+989152000370">علی — ۰۹۱۵۲۰۰۰۳۷۰</a>
+          <a href="tel:+989158000973">رضا — ۰۹۱۵۸۰۰۰۹۷۳</a>
+          <a href="tel:+989152000390">عباس — ۰۹۱۵۲۰۰۰۳۹۰</a>
+          <a href="tel:+989152200540">مهدی — ۰۹۱۵۲۲۰۰۵۴۰</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> باکس حمل خاک نخاله قادری — مشهد</span>
+      <span class="footer-tag">منطقه ۳ و ۴ · بدون واسطه · تماس مستقیم</span>
+    </div>
+  </div>
+</footer>
+
+<div class="dock-wrap" id="dockWrap">
+  <nav class="dock" aria-label="ناوبری پایین">
+    <a href="#home" class="dock-item active" data-nav="home">
+      <svg aria-hidden="true"><use href="#i-home"/></svg>
+      <span>خانه</span>
+    </a>
+    <a href="#services" class="dock-item" data-nav="services">
+      <svg aria-hidden="true"><use href="#i-grid"/></svg>
+      <span>خدمات</span>
+    </a>
+    <button class="dock-center" id="dockCenter" aria-label="تماس سریع" aria-expanded="false" aria-controls="sheet">
+      <svg aria-hidden="true"><use href="#i-phone"/></svg>
+    </button>
+    <a href="#gallery" class="dock-item" data-nav="gallery">
+      <svg aria-hidden="true"><use href="#i-images"/></svg>
+      <span>گالری</span>
+    </a>
+    <a href="#contact" class="dock-item" data-nav="contact">
+      <svg aria-hidden="true"><use href="#i-message"/></svg>
+      <span>تماس</span>
+    </a>
+  </nav>
+</div>
+
+<div class="sheet-backdrop" id="sheetBackdrop"></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+  <div class="sheet-handle" aria-hidden="true"></div>
+  <button class="sheet-close" id="sheetClose" aria-label="بستن"><svg><use href="#i-x"/></svg></button>
+  <h3 id="sheetTitle">تماس سریع</h3>
+  <div class="sheet-actions">
+    <a href="tel:+989152000370" class="sheet-action">
+      <div class="box"><svg aria-hidden="true"><use href="#i-phone"/></svg></div>
+      <div>علی قادری<small>۰۹۱۵۲۰۰۰۳۷۰ · مسئول هماهنگی</small></div>
+    </a>
+    <a href="tel:+989158000973" class="sheet-action">
+      <div class="box"><svg aria-hidden="true"><use href="#i-phone"/></svg></div>
+      <div>رضا قادری<small>۰۹۱۵۸۰۰۰۹۷۳ · ناوگان و لجستیک</small></div>
+    </a>
+    <a href="tel:+989152000390" class="sheet-action">
+      <div class="box"><svg aria-hidden="true"><use href="#i-phone"/></svg></div>
+      <div>عباس قادری<small>۰۹۱۵۲۰۰۰۳۹۰ · پشتیبانی فنی</small></div>
+    </a>
+    <a href="tel:+989152200540" class="sheet-action">
+      <div class="box"><svg aria-hidden="true"><use href="#i-phone"/></svg></div>
+      <div>مهدی قادری<small>۰۹۱۵۲۲۰۰۵۴۰ · مدیریت پروژه</small></div>
+    </a>
+    <button class="sheet-action" id="shareNative">
+      <div class="box"><svg aria-hidden="true"><use href="#i-share"/></svg></div>
+      <div>اشتراک‌گذاری<small>ارسال به همکار یا دوست</small></div>
+    </button>
+    <button class="sheet-action" id="copyLink">
+      <div class="box"><svg aria-hidden="true"><use href="#i-copy"/></svg></div>
+      <div>کپی لینک<small>برای ارسال در پیام‌رسان</small></div>
+    </button>
+  </div>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "باکس حمل خاک نخاله قادری",
+  "description": "حمل خاک و نخاله ساختمانی، خاکبرداری مکانیزه و خدمات کارگری در منطقه ۳ و ۴ مشهد.",
+  "url": "https://mohammabjavadghadery-design.github.io/Baks/",
+  "telephone": "+989152000370",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "مشهد",
+    "addressRegion": "خراسان رضوی",
+    "addressCountry": "IR"
+  },
+  "areaServed": [
+    {"@type": "AdministrativeArea", "name": "منطقه ۳ مشهد"},
+    {"@type": "AdministrativeArea", "name": "منطقه ۴ مشهد"}
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "07:00",
+    "closes": "17:00"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "خدمات",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "حمل خاک و نخاله"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "خاکبرداری مکانیزه"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "خدمات کارگری ساختمانی"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "پشتیبانی تلفنی"}}
+    ]
+  }
+}
+</script>
+
+<script>
+(function(){
+  'use strict';
+
+  var reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var isFinePointer = matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  /* ==========================================================
+     LOADER
+     ========================================================== */
+  var loader = document.getElementById('loader');
+  var loaderFill = document.getElementById('loaderFill');
+  var loaderPct = document.getElementById('loaderPct');
+  var loaderStarted = Date.now();
+  var loaderMinVisible = 550;
+  var loaderProgress = 0;
+  var loaderTimer = null;
+
+  function formatFa(n){
+    return Math.round(n).toLocaleString('fa-IR');
+  }
+
+  function setLoaderProgress(v){
+    loaderProgress = Math.min(100, v);
+    loaderFill.style.width = loaderProgress + '%';
+    loaderPct.textContent = formatFa(loaderProgress) + '٪';
+    if (loaderProgress >= 100){
+      clearInterval(loaderTimer);
+      hideLoader();
+    }
+  }
+
+  function hideLoader(){
+    var wait = Math.max(0, loaderMinVisible - (Date.now() - loaderStarted));
+    setTimeout(function(){
+      loader.classList.add('is-done');
+      document.querySelector('.hero').classList.add('is-ready');
+    }, wait);
+  }
+
+  if (reduceMotion){
+    setLoaderProgress(100);
+  } else {
+    loaderTimer = setInterval(function(){
+      loaderProgress += Math.random() * 14 + 5;
+      setLoaderProgress(loaderProgress);
+    }, 140);
+    setTimeout(function(){ setLoaderProgress(100); }, 4200);
+  }
+
+  window.addEventListener('load', function(){
+    if (loaderProgress < 100) setLoaderProgress(100);
+  }, {once: true});
+
+  /* ==========================================================
+     HEADER SCROLL
+     ========================================================== */
+  var siteHeader = document.getElementById('siteHeader');
+  var headerScrolled = false;
+  window.addEventListener('scroll', function(){
+    var s = window.scrollY > 12;
+    if (s !== headerScrolled){
+      siteHeader.classList.toggle('is-scrolled', s);
+      headerScrolled = s;
+    }
+  }, {passive: true});
+
+  /* ==========================================================
+     STAGE — subtle background shift per section
+     ========================================================== */
+  if ('IntersectionObserver' in window){
+    var stageIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return;
+        var stage = e.target.getAttribute('data-stage');
+        if (stage && document.body.getAttribute('data-stage') !== stage){
+          document.body.setAttribute('data-stage', stage);
+        }
+      });
+    }, {rootMargin: '-45% 0px -45% 0px', threshold: 0});
+    document.querySelectorAll('[data-stage]').forEach(function(el){
+      stageIO.observe(el);
+    });
+  }
+
+  /* ==========================================================
+     REVEAL ON SCROLL
+     ========================================================== */
+  if ('IntersectionObserver' in window){
+    var revealIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){
+          e.target.classList.add('visible');
+          revealIO.unobserve(e.target);
+        }
+      });
+    }, {threshold: 0.12, rootMargin: '0px 0px -40px 0px'});
+    document.querySelectorAll('[data-reveal]').forEach(function(el){
+      revealIO.observe(el);
+    });
+  } else {
+    document.querySelectorAll('[data-reveal]').forEach(function(el){
+      el.classList.add('visible');
+    });
+  }
+
+  /* ==========================================================
+     STAT COUNTERS
+     ========================================================== */
+  function runCounter(el){
+    var target = parseInt(el.getAttribute('data-count'), 10);
+    if (!target || el.dataset.done) return;
+    el.dataset.done = '1';
+    if (reduceMotion){
+      el.textContent = formatFa(target);
+      return;
+    }
+    var startTime = null;
+    var duration = 1800;
+    function step(ts){
+      if (!startTime) startTime = ts;
+      var p = Math.min((ts - startTime) / duration, 1);
+      var eased = 1 - Math.pow(1 - p, 4);
+      el.textContent = formatFa(target * eased);
+      if (p < 1) requestAnimationFrame(step);
+      else el.textContent = formatFa(target);
+    }
+    requestAnimationFrame(step);
+  }
+
+  if ('IntersectionObserver' in window){
+    var counterIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){
+          runCounter(e.target);
+          counterIO.unobserve(e.target);
+        }
+      });
+    }, {threshold: 0.6});
+    document.querySelectorAll('[data-count]').forEach(function(el){
+      counterIO.observe(el);
+    });
+  }
+
+  /* ==========================================================
+     TAGLINE — word reveal
+     ========================================================== */
+  var tagline = document.getElementById('taglineText');
+  if (tagline){
+    var raw = tagline.textContent.trim().split(/\s+/);
+    var hlIndexes = [2, 3];
+    var html = raw.map(function(w, i){
+      var hl = hlIndexes.indexOf(i) !== -1 ? ' hl' : '';
+      return '<span class="w' + hl + '">' + w + '</span>';
+    }).join(' ');
+    tagline.innerHTML = html;
+    var words = tagline.querySelectorAll('.w');
+
+    if (reduceMotion){
+      words.forEach(function(w){ w.classList.add('on'); });
+    } else if ('IntersectionObserver' in window){
+      var tagIO = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if (!e.isIntersecting) return;
+          words.forEach(function(w, i){
+            setTimeout(function(){ w.classList.add('on'); }, i * 55);
+          });
+          tagIO.disconnect();
+        });
+      }, {threshold: 0.5, rootMargin: '0px 0px -15% 0px'});
+      tagIO.observe(tagline);
+    } else {
+      words.forEach(function(w){ w.classList.add('on'); });
+    }
+  }
+
+  /* ==========================================================
+     SPOTLIGHT CARD — desktop only
+     ========================================================== */
+  if (isFinePointer && !reduceMotion){
+    document.querySelectorAll('[data-spotlight]').forEach(function(card){
+      card.addEventListener('mousemove', function(e){
+        var r = card.getBoundingClientRect();
+        card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+        card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+      }, {passive: true});
+    });
+
+    /* TILT — max 2deg */
+    document.querySelectorAll('[data-tilt]').forEach(function(card){
+      card.addEventListener('mousemove', function(e){
+        var r = card.getBoundingClientRect();
+        var x = (e.clientX - r.left) / r.width - 0.5;
+        var y = (e.clientY - r.top) / r.height - 0.5;
+        var ry = x * 4;
+        var rx = -y * 4;
+        card.style.transform = 'perspective(900px) translateY(-3px) rotateX(' + rx + 'deg) rotateY(' + ry + 'deg)';
+      }, {passive: true});
+      card.addEventListener('mouseleave', function(){
+        card.style.transform = '';
+      });
+    });
+
+    /* MAGNET — header CTA and hero primary */
+    document.querySelectorAll('[data-magnet]').forEach(function(el){
+      el.addEventListener('mousemove', function(e){
+        var r = el.getBoundingClientRect();
+        var x = (e.clientX - r.left - r.width / 2) * 0.15;
+        var y = (e.clientY - r.top - r.height / 2) * 0.15;
+        el.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+      }, {passive: true});
+      el.addEventListener('mouseleave', function(){
+        el.style.transform = '';
+      });
+    });
+  }
+
+  /* ==========================================================
+     FAQ
+     ========================================================== */
+  document.querySelectorAll('.faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var isOpen = btn.getAttribute('aria-expanded') === 'true';
+      document.querySelectorAll('.faq-q').forEach(function(b){
+        b.setAttribute('aria-expanded', 'false');
+        document.getElementById(b.getAttribute('aria-controls')).classList.remove('open');
+      });
+      if (!isOpen){
+        btn.setAttribute('aria-expanded', 'true');
+        document.getElementById(btn.getAttribute('aria-controls')).classList.add('open');
+      }
+    });
+  });
+
+  /* ==========================================================
+     AREAS — tabs + search
+     ========================================================== */
+  var areaTabs = document.querySelectorAll('.area-tab');
+  var districts = document.querySelectorAll('.district');
+  var streets = document.querySelectorAll('.streets li');
+  var streetSearch = document.getElementById('streetSearch');
+  var areaEmpty = document.getElementById('areaEmpty');
+  var currentArea = 'all';
+  var currentQuery = '';
+
+  function normalize(s){
+    return String(s)
+      .replace(/\u064A/g, '\u06CC')
+      .replace(/\u0643/g, '\u06A9')
+      .replace(/\u0649/g, '\u06CC')
+      .toLowerCase()
+      .trim();
+  }
+
+  function applyFilters(){
+    var q = normalize(currentQuery);
+    var visibleStreets = 0;
+
+    districts.forEach(function(district){
+      var areaMatch = currentArea === 'all' || district.getAttribute('data-area') === currentArea;
+      var visibleInDistrict = 0;
+
+      district.querySelectorAll('.streets li').forEach(function(li){
+        var street = normalize(li.getAttribute('data-street'));
+        var textMatch = !q || street.indexOf(q) !== -1;
+        var show = areaMatch && textMatch;
+        li.hidden = !show;
+        if (q && show){
+          li.classList.add('street-highlight');
+        } else {
+          li.classList.remove('street-highlight');
+        }
+        if (show) visibleInDistrict++;
+      });
+
+      district.hidden = visibleInDistrict === 0;
+      visibleStreets += visibleInDistrict;
+    });
+
+    if (areaEmpty){
+      areaEmpty.hidden = visibleStreets > 0;
+    }
+  }
+
+  areaTabs.forEach(function(tab){
+    tab.addEventListener('click', function(){
+      currentArea = tab.getAttribute('data-area');
+      areaTabs.forEach(function(t){
+        var on = t === tab;
+        t.classList.toggle('active', on);
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      applyFilters();
+    });
+  });
+
+  if (streetSearch){
+    var searchDebounce;
+    streetSearch.addEventListener('input', function(){
+      clearTimeout(searchDebounce);
+      searchDebounce = setTimeout(function(){
+        currentQuery = streetSearch.value;
+        applyFilters();
+      }, 150);
+    });
+  }
+
+  applyFilters();
+
+  /* ==========================================================
+     DOCK ACTIVE STATE
+     ========================================================== */
+  var dockLinks = document.querySelectorAll('.dock-item[data-nav]');
+  if ('IntersectionObserver' in window && dockLinks.length){
+    var dockIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return;
+        var id = e.target.id;
+        dockLinks.forEach(function(a){
+          a.classList.toggle('active', a.getAttribute('data-nav') === id);
+        });
+      });
+    }, {rootMargin: '-45% 0px -45% 0px'});
+    document.querySelectorAll('main section[id]').forEach(function(s){
+      dockIO.observe(s);
+    });
+  }
+
+  /* ==========================================================
+     SMOOTH SCROLL
+     ========================================================== */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href').slice(1);
+      if (!id) return;
+      var el = document.getElementById(id);
+      if (!el) return;
+      e.preventDefault();
+      var top = el.getBoundingClientRect().top + window.scrollY - 70;
+      window.scrollTo({top: top, behavior: 'smooth'});
+      el.setAttribute('tabindex', '-1');
+      el.focus({preventScroll: true});
+    });
+  });
+
+  /* ==========================================================
+     BOTTOM SHEET
+     ========================================================== */
+  var sheet = document.getElementById('sheet');
+  var sheetBackdrop = document.getElementById('sheetBackdrop');
+  var dockCenter = document.getElementById('dockCenter');
+  var sheetClose = document.getElementById('sheetClose');
+  var lastFocus = null;
+
+  function openSheet(){
+    lastFocus = document.activeElement;
+    sheet.classList.add('open');
+    sheetBackdrop.classList.add('open');
+    dockCenter.setAttribute('aria-expanded', 'true');
+    setTimeout(function(){
+      var first = sheet.querySelector('.sheet-action');
+      if (first) first.focus();
+    }, 300);
+  }
+
+  function closeSheet(){
+    sheet.classList.remove('open');
+    sheetBackdrop.classList.remove('open');
+    dockCenter.setAttribute('aria-expanded', 'false');
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+    else dockCenter.focus();
+  }
+
+  dockCenter.addEventListener('click', openSheet);
+  sheetClose.addEventListener('click', closeSheet);
+  sheetBackdrop.addEventListener('click', closeSheet);
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && sheet.classList.contains('open')){
+      closeSheet();
+    }
+  });
+
+  /* ==========================================================
+     SHARE / COPY
+     ========================================================== */
+  var pageUrl = window.location.href;
+  var shareData = {
+    title: 'باکس حمل خاک و نخاله قادری',
+    text: 'حمل خاک و نخاله در منطقه ۳ و ۴ مشهد.',
+    url: pageUrl
+  };
+
+  function copyText(text){
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).catch(function(){});
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); } catch(e){}
+      document.body.removeChild(ta);
+    }
+  }
+
+  document.getElementById('shareNative').addEventListener('click', function(){
+    if (navigator.share){
+      navigator.share(shareData).catch(function(){});
+    } else {
+      copyText(pageUrl);
+    }
+  });
+
+  document.getElementById('copyLink').addEventListener('click', function(){
+    copyText(pageUrl);
+    var btn = this;
+    var original = btn.innerHTML;
+    btn.innerHTML = '<div class="box"><svg aria-hidden="true"><use href="#i-check"/></svg></div><div>کپی شد<small>لینک در حافظه است</small></div>';
+    setTimeout(function(){ btn.innerHTML = original; }, 1500);
+  });
+
+  /* ==========================================================
+     YEAR
+     ========================================================== */
+  var yearEl = document.getElementById('year');
+  if (yearEl){
+    var d = new Date().getFullYear();
+    yearEl.textContent = d.toLocaleString('fa-IR', {useGrouping: false});
+  }
+
+})();
+</script>
+
+</body>
+</html>
